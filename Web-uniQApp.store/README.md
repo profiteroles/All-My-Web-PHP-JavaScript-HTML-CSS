@@ -4,12 +4,12 @@
 </head>
 <body>
 
-<h2>South Metro Movie Database Web Site</h2>
+<h2>uniQ App Store Web Site</h2>
 
 <div>
-This website made during my software development course.<br>
-Connects to server fetches the data required and presents it with beautiful ui<br>
-You may access the website via ken.uniqapp.store<br>
+This is my own project in development stage.<br>
+I making this app with flutter and it's taking me while as I got few projects are in prioties<br>
+You are welcome to visit it www.uniqapp.store<br>
 <br>
 </div>
 <img src="shot/1.png" alt="Screenshot">

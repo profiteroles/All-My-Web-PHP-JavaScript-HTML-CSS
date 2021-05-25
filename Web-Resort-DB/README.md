@@ -4,16 +4,14 @@
 </head>
 <body>
 
-<h2>South Metro Movie Database Web Site</h2>
+<h2>Dryad Resort Hotel Database Web Site</h2>
 
 <div>
-This website made during my software development course.<br>
-Connects to server fetches the data required and presents it with beautiful ui<br>
-You may access the website via ken.uniqapp.store<br>
+First interaction with Xamp server databases.<br>
+Not a bad looking website luck of funtionalities but it got some potential to improve<br>
+<br>
 <br>
 </div>
 <img src="shot/1.png" alt="Screenshot">
-<img src="shot/2.png" alt="Screenshot">
-<img src="shot/3.png" alt="Screenshot">
 </body>
 </html>

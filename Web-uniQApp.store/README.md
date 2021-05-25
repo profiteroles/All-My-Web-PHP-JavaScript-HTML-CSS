@@ -13,7 +13,5 @@ You are welcome to visit it www.uniqapp.store<br>
 <br>
 </div>
 <img src="shot/1.png" alt="Screenshot">
-<img src="shot/2.png" alt="Screenshot">
-<img src="shot/3.png" alt="Screenshot">
 </body>
 </html>

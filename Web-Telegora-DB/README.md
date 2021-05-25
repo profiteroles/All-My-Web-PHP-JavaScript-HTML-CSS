@@ -4,12 +4,12 @@
 </head>
 <body>
 
-<h2>South Metro Movie Database Web Site</h2>
+<h2>Telegora Mall Database Web Site</h2>
 
 <div>
-This website made during my software development course.<br>
-Connects to server fetches the data required and presents it with beautiful ui<br>
-You may access the website via ken.uniqapp.store<br>
+Telegora was my last assignment where I had to bring all my knowledges together<br>
+and create such website. It's got few cool functionalities such adding, editing, deleting, invoicing.<br>
+I may publish it in the future.<br> 
 <br>
 </div>
 <img src="shot/1.png" alt="Screenshot">

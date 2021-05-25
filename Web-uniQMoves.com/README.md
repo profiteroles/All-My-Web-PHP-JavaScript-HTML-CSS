@@ -4,16 +4,15 @@
 </head>
 <body>
 
-<h2>South Metro Movie Database Web Site</h2>
+<h2>uniQ Moves Training Web Site</h2>
 
 <div>
-This website made during my software development course.<br>
-Connects to server fetches the data required and presents it with beautiful ui<br>
-You may access the website via ken.uniqapp.store<br>
+Did you know this is my very first website. My Programming journey started with this website.<br>
+I was so devistated to create my own website so I can get more traffic for my fitness business.<br>
+When I complete this website. I left everything behind start coding. WooW I never guess I'd be making apps and dive deeper into it<br>
 <br>
 </div>
 <img src="shot/1.png" alt="Screenshot">
 <img src="shot/2.png" alt="Screenshot">
-<img src="shot/3.png" alt="Screenshot">
 </body>
 </html>

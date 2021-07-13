@@ -9,6 +9,10 @@ var isKeyPressed = false;
 var level = gamePattern.length+1;
 
 
+$("h1").on("tap",function(){
+    $(this).hide();
+  });
+
 $(document).keypress(function (e) { 
     if(!isKeyPressed){
         isKeyPressed= true;
@@ -53,7 +57,7 @@ function animatedPress(btn){
 }
 
 function checkAnswer(currentLevel) {
-    if(gamePattern[currentLevel] == userClickedPattern[currentLevel]){
+    if(gamePattern[currentLevel] == userClickedPattern[currentLevel] && isKeyPressed){
         if(gamePattern.length === userClickedPattern.length){
             setTimeout(function () {
                 level++;
@@ -77,5 +81,9 @@ function checkAnswer(currentLevel) {
         $(this).removeClass('game-over');
         next();
     });
+
+
   }
 
+
+  

@@ -6,17 +6,21 @@ header {
     display: block;
     background-color: burlywood;
     height: 10rem;
-  }
-  h1{
+    position: relative;
+}
+
+h1{
       position: absolute;
       margin-left: 40px;
       color: #f2f2f2;
-  }
+      z-index: 1;
+}
 
-  img{
-    height: 10rem;
-    width: 100%;
-  }
+header img{
+    position: absolute;
+    clip: rect(0px 1700px 160px 0px);
+    width: 100%; 
+}
 
 nav {
     overflow: hidden;
@@ -24,9 +28,9 @@ nav {
     padding: 10px;
     margin-top: 10px;
     background-color: #333;
-  }
+}
 
-  nav a{
+nav a{
     background-color: #333;
     float: right;
     color: #f2f2f2;
@@ -35,14 +39,14 @@ nav {
     font-size: 17px;
     text-decoration: none;
     display: block;
-    
-  }
+}
 
-  nav a:hover{
+nav a:hover{
     background-color: #111;
-  }
+    border-radius: 30px;
+}
 
-  main{
+main{
     margin: 20px 0;
     display: flex;
     flex-direction: row;
@@ -50,71 +54,131 @@ nav {
     height: 30rem;
     background-color: blue;
     width: 100%;
-  }
-  .left-aside{
+}
+
+.left-aside{
     background-color: white;
     width: 25%;
     height: 28rem;
     margin: 20px;
     padding-left: 10px;
     overflow: scroll;
-  }
+}
 
-  section{
+[class*="1"]{
+    color: purple;
+    font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+  color: royalblue;
+}
+
+a[href^="http"]::before{
+  font-size: 25px;
+  content: "🏠 ";
+}
+
+a[href^="mailto"]::before{
+  font-size: 25px;
+  content: "📧 ";
+}
+
+a[href^="tel"]::before{
+  font-size: 25px;
+  content: "☎️ ";
+}
+
+.no3:hover{
+color: blueviolet;
+}
+
+.left-aside p:first-letter{
+    font-size: large;
+    color: blue;
+ }
+
+section{
     background-color: black;
     margin: 20px 20px 20px 0;
     float: left;
     width: 84%;
     height: 28rem;
-  }
-  .section-div {
+}
+
+.section-div {
       background-color: lightblue;
       height: 5rem;
       margin: 10px;
       padding: 10px;
-  }
-  .article-section{
+}
+
+p.clear{
+    clear: right;
+}
+
+.article-section{
       flex-direction: row;
       display: flex;
-  }
+}
 
-  article{
+article{
     background-color: grey;
     margin: 10px;
     padding: 10px;
-  }
+}
 
-
-  .left-article{
+.left-article{
     height: 17rem;
     margin-right: 0;
     width: 80%;
     overflow: scroll;
-  }
+}
 
-  .article-aside{
+.article-aside{
     flex-direction: column;
     display: flex;
-  }
+}
 
-  .right-article{
+.right-article{
     display: block;
     flex: 4;
     margin-bottom: 0;
     width: 85%;
-  }
-  .right-aside{
+}
+
+.right-article p:hover{
+  visibility: collapse;
+}
+
+.right-aside{
       background-color: white;
-      /* height: 30rem; */
       padding: 10px;
       width: 85%;
       margin: 10px;
-  }
+}
 
-  footer{
+.right-aside img{
+    height: 4rem;
+    width: 5rem;
+    float: left;
+    cursor: wait;
+}
+
+.right-aside > *{
+    color: blue;
+    clear: right;
+}
+
+.right-aside p{
+    cursor: help;
+}
+
+footer{
       background-color: yellow;
       padding: 3% 5%;
-  }
+}
 
 
   

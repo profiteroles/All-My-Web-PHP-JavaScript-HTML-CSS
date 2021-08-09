@@ -15,7 +15,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="/saas_bread/css/styles.css">
     <title>SaaSy App 1</title>
 </head>
 <body class="bg-gray-200 font-sans leading-normal tracking-normal flex flex-col justify-between h-screen">
@@ -23,7 +23,7 @@
     <nav class="flex items-center justify-between flex-wrap bg-black p-6 fixed w-full z-10 top-0">
         <div class="flex items-center flex-shrink-0 text-white mr-6">
             <a class="text-white no-underline hover:text-white hoer:no-underline flex flex-row" href="/">
-                <img src="./img/saasy-icon.svg" alt="SaaSy App Logo" class="h-14 -my-2 animate-pulse">
+                <img src="/saas_bread/img/saasy-icon.svg" alt="SaaSy App Logo" class="h-14 -my-2 animate-pulse">
                 <span class="text-2xl pl-6 py-1">SaaSy</span>
             </a>
         </div>
@@ -32,11 +32,11 @@
             <ul class="list-reset lg:flex flex-1 items-center">
                 <li class="mr-3 ">
                     <a class="inline-block py-2 px-4 rounded text-white transition-colors duration-500 ease-in-out no-underline hover:text-black hover:bg-gray-400 hover:text-underline py-2 px-4"
-                       href="browse.php">Browse</a>
+                       href="/saas_bread/users/browse.php">Browse</a>
                 </li>
                 <li class="mr-3 ">
                     <a class="inline-block py-2 px-4 rounded text-white transition-colors duration-500 ease-in-out no-underline hover:text-black hover:bg-gray-400 hover:text-underline py-2 px-4"
-                       href="add.php">Add</a>
+                       href="/saas_bread/users/add.php">Add</a>
                 </li>
             </ul>
 

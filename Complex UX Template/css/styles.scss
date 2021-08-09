@@ -1,0 +1,312 @@
+
+
+@import '/variables/_variables.scss';
+body.dark-theme {
+    color: $secondary;
+    background: $dark-color;
+}
+
+body {
+    background-color: $primary;
+    header {
+      display: block;
+      height: 10rem;
+      position: relative;
+      h1{
+        position: absolute;
+        margin-left: 40px;
+        color: $secondary;
+        z-index: 1;
+        margin-top: 60px;
+      } img{
+        position: absolute;
+        clip: rect(0px 1700px 160px 0px);
+        width: 100%; 
+      }
+    }
+}
+
+// @mixin theme($theme: black) {
+//   background: $theme;
+//   box-shadow: 0 0 1px rgba($theme, .25);
+//   color: #fff;
+// }
+
+/* Toggle bar start */
+
+.switch {
+    margin: 10px 20px;
+    position: relative;
+    display: inline-block;
+    width: 55px;
+    height: 27px;
+  }
+   /* Rounded sliders */
+
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: grey;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-style: double;
+    border-radius: 34px;
+    &:before{
+    border-radius: 50%;
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: 6px;
+    bottom: 4px;
+    background-color: $secondary;
+    -webkit-transition: .4s;
+    transition: .4s;
+    margin: -1px;
+    }
+  }
+
+  input{
+      &:checked + .slider{
+      background-color: $primary;
+      border: $secondary;
+      border-style: double;
+      } &:focus + .slider{
+      box-shadow: 0 0 1px $secondary;
+      } &:checked + .slider:before {
+      -webkit-transform: translateX(26px);
+      -ms-transform: translateX(26px);
+      transform: translateX(26px);
+    }
+  }
+
+/* Toggle bar end */
+
+nav {
+    overflow: hidden;
+    list-style-type: none;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: $nav-color;
+    a{
+      background-color: $nav-color;
+      float: right;
+      color: $secondary;
+      text-align: center;
+      padding: 14px 16px;
+      font-size: 17px;
+      text-decoration: none;
+      display: block;
+      a:hover{
+        background-color: $dark-color;
+        border-radius: 30px;
+      }
+    }
+}
+
+/* Burget Menu */
+
+.burger-menu {
+    margin: 5px 10px;
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    .toggle{
+      margin: 0;
+      display: block;
+      position: absolute;
+      width: 35px;
+      height: 27px;
+      opacity: 0;
+      outline: none;
+      -webkit-appearance: none;
+      border: none;
+      z-index: 100;
+      cursor: pointer;
+    } .bar1, .bar2, .bar3 {
+      /* position: absolute; */
+      width: 35px;
+      height: 5px;
+      background-color: $secondary;
+      margin: 6px 0;
+      transition: 0.4s;
+    }
+    .toggle:checked ~ .bar1 {
+      -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+      transform: rotate(-45deg) translate(-9px, 6px) ;
+    }
+    .toggle:checked ~ .bar2 {opacity: 0;}
+    .toggle:checked ~ .bar3 {
+      -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+      transform: rotate(45deg) translate(-8px, -8px) ;
+  }
+}
+
+/* Burger Menu end */
+
+.fa{
+    color: $secondary;
+    position: relative;
+    margin: 20px 20px 0 0px;
+    float: right;
+    size: 7em;
+    &:hover{
+      color:$dark-color;
+    }
+}
+
+main{
+    margin: 20px 0;
+    display: flex;
+    flex-direction: row;
+    height: 30rem;
+    background-color: $body-color;
+    width: 100%;
+    .left-aside{
+      background-color: $secondary;
+      width: 25%;
+      height: 28rem;
+      margin: 20px;
+      padding-left: 10px;
+      overflow: scroll;
+  }
+}
+
+
+
+[class*="1"]{
+    color: purple;
+    font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+  color: royalblue;
+  &[href^="http"]::before{
+    font-size: 25px;
+    content: "🏠 ";
+  } &[href^="mailto"]::before{
+    font-size: 25px;
+    content: "📧 ";
+  }&[href^="tel"]::before{
+    font-size: 25px;
+    content: "☎️ ";
+  }
+}
+
+.no3:hover{
+color: blueviolet;
+}
+
+.left-aside p:first-letter{
+    font-size: large;
+    color: blue;
+ }
+
+section{
+    background-color: black;
+    margin: 20px 20px 20px 0;
+    float: left;
+    width: 84%;
+    height: 28rem;
+}
+
+.section-div {
+      height: 5rem;
+      margin: 10px;
+      padding: 10px;
+      background: #E71F62;
+      background: -moz-radial-gradient(center, #E71F62 0%, #7833CB 24%, #753E1E 100%);
+      background: -webkit-radial-gradient(center, #E71F62 0%, #7833CB 24%, #753E1E 100%);
+      background: radial-gradient(ellipse at center, #E71F62 0%, #7833CB 24%, #753E1E 100%);
+      span{
+        color: $secondary;
+      }
+}
+
+p.clear{
+    clear: right;
+}
+
+.article-section{
+    flex-direction: row;
+    display: flex;
+    article{
+      background-color: $article-color;
+      margin: 10px;
+      padding: 8px;
+    }
+    .left-article{
+      height: 17rem;
+      margin-right: 0;
+      width: 80%;
+      overflow: scroll;
+    }.right-aside{
+      background-color: $secondary;
+      padding: 10px;
+      width: 85%;
+      margin: 10px;
+      img{
+        height: 4rem;
+        width: 5rem;
+        float: left;
+        cursor: wait;
+      } & > * {
+        color: blue;
+        clear: right;
+      } p{
+        cursor: help;
+      }
+    }
+}
+
+.article-aside{
+    flex-direction: column;
+    display: flex;
+}
+
+.right-article{
+    display: block;
+    flex: 4;
+    margin-bottom: 0;
+    width: 85%;
+    & p:hover{
+      visibility: collapse;
+    }
+}
+
+.flex-gap-test {
+	display: inline-flex;
+	flex-wrap: wrap;
+	gap: 16px;
+  background-color: $body-color;
+}
+
+footer{
+      background-color: yellow;
+      padding: 3% 5%;
+      animation-duration: 4s;
+      animation-iteration-count: infinite;
+      animation-name: liniar-animation;
+      text-align: center;
+      p{
+        align-items: center;
+        color: $secondary;
+        background-color: lightcoral;
+        border-radius: 10px;
+        left: 50%;
+        height: 1.4em;
+      }
+}
+
+@keyframes liniar-animation{
+  0% {background-color: yellow;}
+  25% {background-color: yellowgreen;}
+  50% {background-color: green;}
+  75% {background-color: yellowgreen;}
+  100% {background-color: yellowgreen;}
+}

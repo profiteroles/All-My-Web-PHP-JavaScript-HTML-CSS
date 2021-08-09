@@ -3,7 +3,7 @@
  * Filename:index.php
  */
 
-require_once './templates/header.php';
+require_once __DIR__.'/templates/header.php';
 ?>
     <main class="container shadow-lg mx-auto bg-auto bg-gray-50 mt-2 md:mt-8 p-6 mb-8 rounded-md">
         <div class="mt-6 mb-6">
@@ -12,4 +12,4 @@ require_once './templates/header.php';
         </div>
     </main>
 <?php
-require_once './templates/footer.php';
+require_once __DIR__.'/templates/footer.php';

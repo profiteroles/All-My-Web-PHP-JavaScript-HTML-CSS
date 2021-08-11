@@ -1,9 +1,7 @@
-@import './variables/_variables.scss';
+@import './style/_variables.scss';
+@import './style/mixins.scss';
 
-body.dark-theme {
-    color: $secondary;
-    background: $dark-color;
-}
+
 
 body {
     background-color: $primary;
@@ -24,13 +22,16 @@ body {
       }
     }
 }
+.dark-mode {
+  @include theme($dark-color);
+  color: $secondary;
+  background: $dark-color;
+}
 
 .switch {
-    margin: 10px 20px;
+  @include size-margin($h:27px, $w:55px, $m:10px 20px);
     position: relative;
     display: inline-block;
-    width: 55px;
-    height: 27px;
   }
 
    /* Rounded sliders */
@@ -47,27 +48,24 @@ body {
     border-style: double;
     border-radius: 34px;
     &:before{
+      @include size-margin($h:16px, $w:16px, $m:-1px);
     border-radius: 50%;
     position: absolute;
     content: "";
-    height: 16px;
-    width: 16px;
     left: 6px;
     bottom: 4px;
     background-color: $secondary;
     -webkit-transition: .4s;
     transition: .4s;
-    margin: -1px;
     }
   }
 
   input{
       &:checked + .slider{
       background-color: $primary;
-      border: $secondary;
-      border-style: double;
+      border: 2px solid $secondary ;
       } &:focus + .slider{
-      box-shadow: 0 0 1px $secondary;
+      box-shadow: 0 0 5px $primary;
       } &:checked + .slider:before {
       -webkit-transform: translateX(26px);
       -ms-transform: translateX(26px);
@@ -101,18 +99,13 @@ nav {
 }
 
 /* Burget Menu */
-
 .burger-menu {
-    margin: 5px 10px;
+  @include size-margin($h:35px,$w:35px, $m:5px 10px);
     position: absolute;
-    width: 35px;
-    height: 35px;
     .toggle{
-      margin: 0;
+      @include size-margin($h:27px,$w:35px, $m:0);
       display: block;
       position: absolute;
-      width: 35px;
-      height: 27px;
       opacity: 0;
       outline: none;
       -webkit-appearance: none;
@@ -120,11 +113,8 @@ nav {
       z-index: 100;
       cursor: pointer;
     } .bar1, .bar2, .bar3 {
-      /* position: absolute; */
-      width: 35px;
-      height: 5px;
+      @include size-margin($h:5px,$w:35px, $m:6px 0);
       background-color: $secondary;
-      margin: 6px 0;
       transition: 0.4s;
     }
     .toggle:checked ~ .bar1 {
@@ -139,7 +129,6 @@ nav {
 }
 
 /* Burger Menu end */
-
 .fa{
     color: $secondary;
     position: relative;
@@ -148,21 +137,21 @@ nav {
     size: 7em;
     &:hover{
       color:$dark-color;
+      transform: scale(2);
+      &:after{
+      transform: translate(5px, -50%);
+      }
     }
 }
 
 main{
-    margin: 20px 0;
-    display: flex;
-    flex-direction: row;
-    height: 30rem;
+  @include size-margin($h:35rem, $m:20px 0);
+  @include col-row();
     background-color: $body-color;
-    width: 100%;
+    //there is the fuckin issue
     .left-aside{
-      background-color: $secondary;
-      width: 25%;
-      height: 28rem;
-      margin: 20px;
+      @include size-margin($h:32.8rem,$w:25%, $m:20px);
+      // background-color: $secondary;
       padding-left: 10px;
       overflow: scroll;
       p:first-letter{
@@ -178,87 +167,78 @@ main{
       text-decoration: none;
       color: royalblue;
       &[href^="http"]::before{
-        font-size: 25px;
+        @include medium-text;
         content: "🏠 ";
       } &[href^="mailto"]::before{
-        font-size: 25px;
+        @include medium-text;
         content: "📧 ";
       }&[href^="tel"]::before{
-        font-size: 25px;
+        @include medium-text;
         content: "☎️ ";
+      }&:hover{
+        @include hoverText;
+        }
+      }
+      li:hover{
+        @include hoverText;
+      }
+      section{
+        @include size-margin($h:32rem,$w:84%, $m:20px 20px 30px .2rem);
+        background-color: $dark-color;
+        float: left;
+        border: 7px double $primary;
+      .section-div {
+          @include articleBox;
+          @include radiant;
+          height: 5rem;
+          span{
+            color: $secondary;
+          }
+      }
+      aside{
+        background-color: white;
+        padding:20px 5px 10px 10px;
+        @include size-margin($h:null,$w:90%, $m:10px);
+        img{
+          @include size-margin($h:4rem,$w:5rem, $m:null);
+          float: left;
+          cursor: wait;
+        } & > * {
+          color: $body-color;
+        } p{
+          cursor: help;
+          @include small-text;
+        }
       }
     }
-    .no3:hover{
-      color: blueviolet;
-      font-weight: bold;
-    }
   }
-
-section{
-    background-color: black;
-    margin: 20px 20px 20px 0;
-    float: left;
-    width: 84%;
-    height: 28rem;
-    .section-div {
-      height: 5rem;
-      margin: 10px;
-      padding: 10px;
-      background: $divPink;
-      background: -moz-radial-gradient(center, $divPink 0%, #7833CB 24%, #753E1E 100%);
-      background: -webkit-radial-gradient(center, $divPink 0%, #7833CB 24%, #753E1E 100%);
-      background: radial-gradient(ellipse at center, $divPink 0%, #7833CB 24%, #753E1E 100%);
-      span{
-        color: $secondary;
-      }
-    }
-  }
-
-p.clear{
-    clear: right;
-}
 
 .article-section{
-    flex-direction: row;
-    display: flex;
+    @include col-row();
     article{
-      background-color: $article-color;
-      margin: 10px;
-      padding: 8px;
+      @include articleBox;
     }.left-article{
-      height: 17rem;
-      margin-right: 0;
-      width: 80%;
+      @include size-margin($h:21rem,$w:80%, $m:10px 0 0 10px);
       overflow: scroll;
-    } .right-aside{
-      background-color: white;
-      padding:20px 5px 10px 10px;
-      width: 90%;
-      margin: 10px;
-      img{
-        height: 4rem;
-        width: 5rem;
-        float: left;
-        cursor: wait;
-      } & > * {
-        color: blue;
-        clear: right;
-      } p{
-        cursor: help;
+      & h3:hover{
+        color: white;
+        font-size: 1.2rem;
       }
-    }.article-aside{
-      flex-direction: column;
-      display: flex;
+    } .article-aside{
+    @include col-row($flex:column);
     }.right-article{
       display: block;
       flex: 4;
       margin-bottom: 10px;
       width: 90%;
-      & p:hover{
-      color: white;
-      font-size: 1.2rem;
-    }
+      & p::after{
+        content: $article3;
+      }
   }
+}
+// get it checked
+#tasks{
+  background-color: white;
 }
 
 .flex-gap-test {
@@ -269,56 +249,10 @@ p.clear{
 }
 
 footer{
-      background-color: yellow;
-      padding: 3% 5%;
-      animation-duration: 4s;
-      animation-iteration-count: infinite;
-      animation-name: liniar-animation;
-      text-align: center;
-      p{
-        align-items: center;
-        color: $secondary;
-        background-color: lightcoral;
-        border-radius: 10px;
-        left: 50%;
-        height: 1.4em;
-      }
-}
-
-@keyframes liniar-animation{
-  0% {background-color: yellow;}
-  25% {background-color: yellowgreen;}
-  50% {background-color: green;}
-  75% {background-color: yellowgreen;}
-  100% {background-color: yellowgreen;}
+  @include liniarAnimation;
+  @include footer-style;
 }
 
 @media only screen and (max-width: 800px) {
-  main{
-    flex-direction: column;
-    height: 76rem;
-    .left-aside{
-      width: 87%;
-      padding-left: 5%;
-    } #right-aside{
-      //why this doesn't work when its a class
-      width: 92%;
-    } section{
-      margin: 20px 0px 20px 20px ;
-      height: 60%;
-      width: 92%;
-    } .article-section{
-      background-color: orangered;
-      flex-direction: column;
-      margin: 10px;
-    } .left-article{
-      background-color: pink;
-      // height: 1rem;
-      padding-right: 13%;
-      width: 92%;
-      // overflow: scroll;
-    } #right-article{
-      width: 92%;
-    }
-  }  
+  @include mobileVersion;
 }

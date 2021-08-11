@@ -1,9 +1,5 @@
 @charset "UTF-8";
-body.dark-theme {
-  color: white;
-  background: black;
-}
-
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap");
 body {
   background-color: chocolate;
 }
@@ -28,12 +24,18 @@ body header img {
   width: 100%;
 }
 
+.dark-mode {
+  background-color: black;
+  color: white;
+  background: black;
+}
+
 .switch {
+  height: 27px;
+  width: 55px;
   margin: 10px 20px;
   position: relative;
   display: inline-block;
-  width: 55px;
-  height: 27px;
 }
 
 /* Rounded sliders */
@@ -52,28 +54,27 @@ body header img {
 }
 
 .slider:before {
+  height: 16px;
+  width: 16px;
+  margin: -1px;
   border-radius: 50%;
   position: absolute;
   content: "";
-  height: 16px;
-  width: 16px;
   left: 6px;
   bottom: 4px;
   background-color: white;
   -webkit-transition: .4s;
   transition: .4s;
-  margin: -1px;
 }
 
 input:checked + .slider {
   background-color: chocolate;
-  border: white;
-  border-style: double;
+  border: 2px solid white;
 }
 
 input:focus + .slider {
-  -webkit-box-shadow: 0 0 1px white;
-          box-shadow: 0 0 1px white;
+  -webkit-box-shadow: 0 0 5px chocolate;
+          box-shadow: 0 0 5px chocolate;
 }
 
 input:checked + .slider:before {
@@ -109,18 +110,18 @@ nav a:hover {
 
 /* Burget Menu */
 .burger-menu {
+  height: 35px;
+  width: 35px;
   margin: 5px 10px;
   position: absolute;
-  width: 35px;
-  height: 35px;
 }
 
 .burger-menu .toggle {
+  height: 27px;
+  width: 35px;
   margin: 0;
   display: block;
   position: absolute;
-  width: 35px;
-  height: 27px;
   opacity: 0;
   outline: none;
   -webkit-appearance: none;
@@ -130,11 +131,10 @@ nav a:hover {
 }
 
 .burger-menu .bar1, .burger-menu .bar2, .burger-menu .bar3 {
-  /* position: absolute; */
-  width: 35px;
   height: 5px;
-  background-color: white;
+  width: 35px;
   margin: 6px 0;
+  background-color: white;
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
@@ -164,9 +164,18 @@ nav a:hover {
 
 .fa:hover {
   color: black;
+  -webkit-transform: scale(2);
+          transform: scale(2);
+}
+
+.fa:hover:after {
+  -webkit-transform: translate(5px, -50%);
+          transform: translate(5px, -50%);
 }
 
 main {
+  height: 35rem;
+  width: 100%;
   margin: 20px 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -175,15 +184,12 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  height: 30rem;
   background-color: blue;
-  width: 100%;
 }
 
 main .left-aside {
-  background-color: white;
+  height: 32.8rem;
   width: 25%;
-  height: 28rem;
   margin: 20px;
   padding-left: 10px;
   overflow: scroll;
@@ -205,57 +211,101 @@ main a {
 }
 
 main a[href^="http"]::before {
+  color: #460c61;
+  font-family: 'Noto Sans JP', sans-serif;
   font-size: 25px;
+  font-color: #460c61;
   content: "🏠 ";
 }
 
 main a[href^="mailto"]::before {
+  color: #460c61;
+  font-family: 'Noto Sans JP', sans-serif;
   font-size: 25px;
+  font-color: #460c61;
   content: "📧 ";
 }
 
 main a[href^="tel"]::before {
+  color: #460c61;
+  font-family: 'Noto Sans JP', sans-serif;
   font-size: 25px;
+  font-color: #460c61;
   content: "☎️ ";
 }
 
-main .no3:hover {
-  color: blueviolet;
+main a:hover {
+  color: black;
+  font-size: 18px;
   font-weight: bold;
+  -webkit-transform: translate(5px, -20%);
+          transform: translate(5px, -20%);
 }
 
-section {
-  background-color: black;
-  margin: 20px 20px 20px 0;
-  float: left;
+main li:hover {
+  color: black;
+  font-size: 18px;
+  font-weight: bold;
+  -webkit-transform: translate(5px, -20%);
+          transform: translate(5px, -20%);
+}
+
+main section {
+  height: 32rem;
   width: 84%;
-  height: 28rem;
+  margin: 20px 20px 30px 0.2rem;
+  background-color: black;
+  float: left;
+  border: 7px double chocolate;
 }
 
-section .section-div {
-  height: 5rem;
+main section .section-div {
+  background-color: grey;
   margin: 10px;
-  padding: 10px;
+  padding: 8px;
   background: #E71F62;
   background: radial-gradient(ellipse at center, #E71F62 0%, #7833CB 24%, #753E1E 100%);
+  height: 5rem;
 }
 
-section .section-div span {
+main section .section-div span {
   color: white;
 }
 
-p.clear {
-  clear: right;
+main section aside {
+  background-color: white;
+  padding: 20px 5px 10px 10px;
+  width: 90%;
+  margin: 10px;
+}
+
+main section aside img {
+  height: 4rem;
+  width: 5rem;
+  float: left;
+  cursor: wait;
+}
+
+main section aside > * {
+  color: blue;
+}
+
+main section aside p {
+  cursor: help;
+  color: #460c61;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 12px;
+  font-color: #460c61;
 }
 
 .article-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 .article-section article {
@@ -265,43 +315,25 @@ p.clear {
 }
 
 .article-section .left-article {
-  height: 17rem;
-  margin-right: 0;
+  height: 21rem;
   width: 80%;
+  margin: 10px 0 0 10px;
   overflow: scroll;
 }
 
-.article-section .right-aside {
-  background-color: white;
-  padding: 20px 5px 10px 10px;
-  width: 90%;
-  margin: 10px;
-}
-
-.article-section .right-aside img {
-  height: 4rem;
-  width: 5rem;
-  float: left;
-  cursor: wait;
-}
-
-.article-section .right-aside > * {
-  color: blue;
-  clear: right;
-}
-
-.article-section .right-aside p {
-  cursor: help;
+.article-section .left-article h3:hover {
+  color: white;
+  font-size: 1.2rem;
 }
 
 .article-section .article-aside {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 .article-section .right-article {
@@ -313,9 +345,12 @@ p.clear {
   width: 90%;
 }
 
-.article-section .right-article p:hover {
-  color: white;
-  font-size: 1.2rem;
+.article-section .right-article p::after {
+  content: "Answer misery adieus add wooded how nay men before though. Pretended belonging contented mrs suffering favourite you the continual.";
+}
+
+#tasks {
+  background-color: white;
 }
 
 .flex-gap-test {
@@ -329,26 +364,15 @@ p.clear {
 }
 
 footer {
-  background-color: yellow;
-  padding: 3% 5%;
   -webkit-animation-duration: 4s;
           animation-duration: 4s;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
   -webkit-animation-name: liniar-animation;
           animation-name: liniar-animation;
+  background-color: yellow;
+  padding: 3% 5%;
   text-align: center;
-}
-
-footer p {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  color: white;
-  background-color: lightcoral;
-  border-radius: 10px;
-  left: 50%;
-  height: 1.4em;
 }
 
 @-webkit-keyframes liniar-animation {
@@ -387,33 +411,42 @@ footer p {
   }
 }
 
+footer p {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  background-color: lightcoral;
+  border-radius: 10px;
+  left: 50%;
+  height: 1.4em;
+}
+
 @media only screen and (max-width: 800px) {
   main {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    height: 76rem;
+    height: 92rem;
   }
   main .left-aside {
     width: 87%;
     padding-left: 5%;
   }
-  main #right-aside {
+  main #bottom-aside {
     width: 92%;
   }
   main section {
-    margin: 20px 0px 20px 20px;
-    height: 60%;
-    width: 92%;
+    margin: 0 20px 0;
+    height: 54rem;
+    width: 90%;
   }
   main .article-section {
-    background-color: orangered;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin: 10px;
   }
   main .left-article {
     background-color: pink;
@@ -421,7 +454,7 @@ footer p {
     width: 92%;
   }
   main #right-article {
-    width: 92%;
+    width: 90%;
   }
 }
 /*# sourceMappingURL=styles.css.map */

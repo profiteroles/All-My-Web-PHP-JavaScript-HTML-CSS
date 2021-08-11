@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+
+@mixin theme($theme:Dark) {
+    background-color: $dark-color;
+}
+
+@mixin col-row($flex: row) {
+    display: flex;
+    flex-direction: $flex;
+}
+
+@mixin small-text {
+    color: $text-color;
+    font: {
+        family: 'Noto Sans JP', sans-serif;
+        size: 12px;
+        color: $text-color;
+    };
+}
+@mixin medium-text{
+    color: $text-color;
+    font: {
+        family: 'Noto Sans JP', sans-serif;
+        size: 25px;
+        color: $text-color;
+    };
+}
+
+@mixin size-margin($h:10%, $w:100%,$m:20px) {
+    height: $h;
+    width: $w;
+    margin:$m;
+}
+
+@mixin radiant {
+    background: $divPink;
+    background: -moz-radial-gradient($radiant-map);
+    background: -webkit-radial-gradient($radiant-map);
+    background: radial-gradient(ellipse at $radiant-map);
+}
+
+@mixin articleBox {
+    background-color: $article-color;
+    margin: 10px;
+    padding: 8px;
+}
+
+@mixin hoverText {
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    transform: translate(5px, -20%);
+}
+
+@mixin liniarAnimation {
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-name: liniar-animation;
+
+    @keyframes liniar-animation{
+        0% {background-color: yellow;}
+        25% {background-color: yellowgreen;}
+        50% {background-color: green;}
+        75% {background-color: yellowgreen;}
+        100% {background-color: yellowgreen;}
+      }
+}
+
+@mixin footer-style {
+    background-color: yellow;
+      padding: 3% 5%;
+      text-align: center;
+      p{
+        align-items: center;
+        color: $secondary;
+        background-color: lightcoral;
+        border-radius: 10px;
+        left: 50%;
+        height: 1.4em;
+      }
+}
+
+@mixin mobileVersion {
+    main{
+        flex-direction: column;
+        height: 92rem;
+        .left-aside{
+          width: 87%;
+          padding-left: 5%;
+        } #bottom-aside{
+          width: 92%;
+        } section{
+          margin: 0 20px 0;
+          height: 54rem;
+          width: 90%;
+        } .article-section{
+          flex-direction: column;
+        } .left-article{
+          background-color: pink;
+          padding-right: 13%;
+          width: 92%;
+        } #right-article{
+          width: 90%;
+        }
+      }  
+}

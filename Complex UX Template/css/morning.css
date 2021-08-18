@@ -1,7 +1,7 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap");
 body {
-  background-color: chocolate;
+  background-color: white;
 }
 
 body header {
@@ -13,7 +13,7 @@ body header {
 body header h1 {
   position: absolute;
   margin-left: 40px;
-  color: white;
+  color: chocolate;
   z-index: 1;
   margin-top: 60px;
 }
@@ -25,9 +25,9 @@ body header img {
 }
 
 .dark-mode {
-  background-color: black;
-  color: white;
-  background: black;
+  background-color: darkgrey;
+  color: chocolate;
+  background: darkgrey;
 }
 
 .switch {
@@ -62,19 +62,19 @@ body header img {
   content: "";
   left: 6px;
   bottom: 4px;
-  background-color: white;
+  background-color: chocolate;
   -webkit-transition: .4s;
   transition: .4s;
 }
 
 input:checked + .slider {
-  background-color: chocolate;
-  border: 2px solid white;
+  background-color: white;
+  border: 2px solid chocolate;
 }
 
 input:focus + .slider {
-  -webkit-box-shadow: 0 0 5px chocolate;
-          box-shadow: 0 0 5px chocolate;
+  -webkit-box-shadow: 0 0 5px white;
+          box-shadow: 0 0 5px white;
 }
 
 input:checked + .slider:before {
@@ -83,22 +83,19 @@ input:checked + .slider:before {
 }
 
 /* Toggle bar end */
-myBorder, nav {
-  border: 3px solid palegreen;
-}
-
 nav {
   overflow: hidden;
   list-style-type: none;
   padding: 10px;
   margin-top: 10px;
   background-color: #333;
+  border: 3px solid red;
 }
 
 nav a {
   background-color: #333;
   float: right;
-  color: white;
+  color: chocolate;
   text-align: center;
   padding: 14px 16px;
   font-size: 17px;
@@ -107,7 +104,7 @@ nav a {
 }
 
 nav a:hover {
-  background-color: chocolate;
+  background-color: white;
   border-radius: 30px;
   color: #333;
 }
@@ -138,7 +135,7 @@ nav a:hover {
   height: 5px;
   width: 35px;
   margin: 6px 0;
-  background-color: white;
+  background-color: chocolate;
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
@@ -159,7 +156,7 @@ nav a:hover {
 
 /* Burger Menu end */
 .fa {
-  color: white;
+  color: chocolate;
   position: relative;
   margin: 20px 20px 0 0px;
   float: right;
@@ -167,7 +164,7 @@ nav a:hover {
 }
 
 .fa:hover {
-  color: black;
+  color: darkgrey;
   -webkit-transform: scale(2);
           transform: scale(2);
 }
@@ -188,14 +185,13 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  background-color: blue;
+  background-color: lightblue;
 }
 
 main .left-aside {
   height: 32.8rem;
   width: 25%;
   margin: 20px;
-  background-color: #a277aa;
   padding-left: 10px;
   overflow: scroll;
 }
@@ -206,7 +202,7 @@ main .left-aside p:first-letter {
 }
 
 main [class*="1"] {
-  color: white;
+  color: purple;
   font-weight: bold;
 }
 
@@ -216,26 +212,26 @@ main a {
 }
 
 main a[href^="http"]::before {
-  color: #460c61;
+  color: #9c42c5;
   font-family: 'Noto Sans JP', sans-serif;
   font-size: 25px;
-  font-color: #460c61;
+  font-color: #9c42c5;
   content: "🏠 ";
 }
 
 main a[href^="mailto"]::before {
-  color: #460c61;
+  color: #9c42c5;
   font-family: 'Noto Sans JP', sans-serif;
   font-size: 25px;
-  font-color: #460c61;
+  font-color: #9c42c5;
   content: "📧 ";
 }
 
 main a[href^="tel"]::before {
-  color: #460c61;
+  color: #9c42c5;
   font-family: 'Noto Sans JP', sans-serif;
   font-size: 25px;
-  font-color: #460c61;
+  font-color: #9c42c5;
   content: "☎️ ";
 }
 
@@ -247,11 +243,6 @@ main a:hover {
           transform: translate(5px, -20%);
 }
 
-main li {
-  height: 14px;
-  height: 28px;
-}
-
 main li:hover {
   color: black;
   font-size: 18px;
@@ -260,39 +251,30 @@ main li:hover {
           transform: translate(5px, -20%);
 }
 
-main button:hover #pink {
-  color: palegreen;
-}
-
 main section {
   height: 32rem;
   width: 84%;
   margin: 20px 20px 30px 0.2rem;
-  background-color: black;
+  background-color: darkgrey;
   float: left;
-  border: 7px double chocolate;
+  border: 7px double white;
 }
 
 main section .section-div {
-  background-color: grey;
+  background-color: pink;
   margin: 10px;
   padding: 8px;
-  background: #E71F62;
-  background: radial-gradient(ellipse at center, #E71F62 0%, #7833CB 24%, #753E1E 100%);
+  background: #b43c64d2;
+  background: radial-gradient(ellipse at center, #b43c64d2 0%, #4d3469 24%, #a85c2f 100%);
   height: 5rem;
 }
 
 main section .section-div span {
-  color: white;
-}
-
-main section .section-div button {
-  background-color: transparent;
-  border: none;
+  color: chocolate;
 }
 
 main section aside {
-  background-color: #a277aa;
+  background-color: white;
   padding: 20px 5px 10px 10px;
   width: 90%;
   margin: 10px;
@@ -306,15 +288,15 @@ main section aside img {
 }
 
 main section aside > * {
-  color: blue;
+  color: lightblue;
 }
 
 main section aside p {
   cursor: help;
-  color: #460c61;
+  color: #9c42c5;
   font-family: 'Noto Sans JP', sans-serif;
   font-size: 12px;
-  font-color: #460c61;
+  font-color: #9c42c5;
 }
 
 .article-section {
@@ -326,9 +308,13 @@ main section aside p {
       -ms-flex-direction: row;
           flex-direction: row;
 }
+main section .section-div button {
+  background-color: transparent;
+  border: none;
+}
 
 .article-section article {
-  background-color: grey;
+  background-color: pink;
   margin: 10px;
   padding: 8px;
 }
@@ -345,13 +331,7 @@ main section aside p {
   font-size: 1.2rem;
 }
 
-.article-section .right-aside {
-  width: 93%;
-}
-
 .article-section .article-aside {
-  background-color: palegreen;
-  margin: 10px 10px 0px 15px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -367,15 +347,15 @@ main section aside p {
       -ms-flex: 4;
           flex: 4;
   margin-bottom: 10px;
-  width: 93%;
+  width: 90%;
 }
 
-.article-section .right-article p::before {
-  content: "Answer misery adieus add wooded how nay men before though. Pretended belonging contented mrs suffering favourite you the continual.";
+.article-section .right-article p::after {
+  content: "This is Morning Theme. Answer misery adieus add wooded how nay men before though. Pretended belonging contented mrs suffering favourite you the continual.";
 }
 
 #tasks {
-  background-color: #a277aa;
+  background-color: white;
 }
 
 .flex-gap-test {
@@ -385,7 +365,7 @@ main section aside p {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 16px;
-  background-color: blue;
+  background-color: lightblue;
 }
 
 footer {
@@ -440,7 +420,7 @@ footer p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: white;
+  color: chocolate;
   background-color: lightcoral;
   border-radius: 10px;
   left: 50%;
@@ -460,7 +440,7 @@ footer p {
     padding-left: 5%;
   }
   main #bottom-aside {
-    width: 90%;
+    width: 92%;
   }
   main section {
     margin: 0 20px 0;
@@ -475,11 +455,10 @@ footer p {
   }
   main .left-article {
     background-color: pink;
-    padding-right: 15%;
-    width: 95%;
+    padding-right: 13%;
+    width: 92%;
   }
   main #right-article {
-    margin-bottom: 10px;
     width: 90%;
   }
 }

@@ -1,6 +1,5 @@
-@import './style/_variables.scss';
 @import './style/mixins.scss';
-
+@import './style/_variables';
 
 
 body {
@@ -75,7 +74,12 @@ body {
 
 /* Toggle bar end */
 
-nav {
+myBorder{
+  border:  3px solid $sexyBorderColor;
+}
+
+nav{
+@extend myBorder;
     overflow: hidden;
     list-style-type: none;
     padding: 10px;
@@ -151,21 +155,21 @@ main{
     //there is the fuckin issue
     .left-aside{
       @include size-margin($h:32.8rem,$w:25%, $m:20px);
-      // background-color: $secondary;
+      background-color: $asideColor;
       padding-left: 10px;
       overflow: scroll;
       p:first-letter{
         font-size: large;
-        color: blue;
+        color: $body-color;
       }
     }
     [class*="1"]{
-    color: purple;
+    color: $secondary;
     font-weight: bold;
     }
     a {
       text-decoration: none;
-      color: royalblue;
+      color: $linkColor;
       &[href^="http"]::before{
         @include medium-text;
         content: "🏠 ";
@@ -179,8 +183,23 @@ main{
         @include hoverText;
         }
       }
+      li{
+        @for $i from 1 through $liHeight{
+          height: $i * 14px;
+        }
+      }
       li:hover{
         @include hoverText;
+      }
+      button:hover{
+        #pink{
+          color: palegreen;
+        }
+        // @each $theme, $i in $liColors{
+        //    .#{$theme} {
+        //     color: $i;
+        //   }
+        // }
       }
       section{
         @include size-margin($h:32rem,$w:84%, $m:20px 20px 30px .2rem);
@@ -194,9 +213,13 @@ main{
           span{
             color: $secondary;
           }
+          button{
+            background-color: transparent;
+            border: none;
+          }
       }
       aside{
-        background-color: white;
+        background-color: $asideColor;
         padding:20px 5px 10px 10px;
         @include size-margin($h:null,$w:90%, $m:10px);
         img{
@@ -224,21 +247,26 @@ main{
         color: white;
         font-size: 1.2rem;
       }
-    } .article-aside{
+    } .right-aside{
+      width: 93%;
+    }
+    .article-aside{
+      background-color: $sexyBorderColor;
+      margin: 10px 10px 0px 15px;
     @include col-row($flex:column);
     }.right-article{
       display: block;
       flex: 4;
       margin-bottom: 10px;
-      width: 90%;
-      & p::after{
+      width: 93%;
+      & p::before{
         content: $article3;
       }
   }
 }
 // get it checked
 #tasks{
-  background-color: white;
+  background-color: $asideColor;
 }
 
 .flex-gap-test {

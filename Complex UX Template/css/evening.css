@@ -17,7 +17,10 @@ body header h1 {
   z-index: 1;
   margin-top: 60px;
 }
-
+main section .section-div button {
+  background-color: transparent;
+  border: none;
+}
 body header img {
   position: absolute;
   clip: rect(0px 1700px 160px 0px);
@@ -83,16 +86,13 @@ input:checked + .slider:before {
 }
 
 /* Toggle bar end */
-myBorder, nav {
-  border: 3px solid palegreen;
-}
-
 nav {
   overflow: hidden;
   list-style-type: none;
   padding: 10px;
   margin-top: 10px;
   background-color: #333;
+  border: 3px solid red;
 }
 
 nav a {
@@ -195,7 +195,6 @@ main .left-aside {
   height: 32.8rem;
   width: 25%;
   margin: 20px;
-  background-color: #a277aa;
   padding-left: 10px;
   overflow: scroll;
 }
@@ -206,7 +205,7 @@ main .left-aside p:first-letter {
 }
 
 main [class*="1"] {
-  color: white;
+  color: purple;
   font-weight: bold;
 }
 
@@ -247,21 +246,12 @@ main a:hover {
           transform: translate(5px, -20%);
 }
 
-main li {
-  height: 14px;
-  height: 28px;
-}
-
 main li:hover {
   color: black;
   font-size: 18px;
   font-weight: bold;
   -webkit-transform: translate(5px, -20%);
           transform: translate(5px, -20%);
-}
-
-main button:hover #pink {
-  color: palegreen;
 }
 
 main section {
@@ -286,13 +276,8 @@ main section .section-div span {
   color: white;
 }
 
-main section .section-div button {
-  background-color: transparent;
-  border: none;
-}
-
 main section aside {
-  background-color: #a277aa;
+  background-color: white;
   padding: 20px 5px 10px 10px;
   width: 90%;
   margin: 10px;
@@ -345,13 +330,7 @@ main section aside p {
   font-size: 1.2rem;
 }
 
-.article-section .right-aside {
-  width: 93%;
-}
-
 .article-section .article-aside {
-  background-color: palegreen;
-  margin: 10px 10px 0px 15px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -367,15 +346,15 @@ main section aside p {
       -ms-flex: 4;
           flex: 4;
   margin-bottom: 10px;
-  width: 93%;
+  width: 90%;
 }
 
-.article-section .right-article p::before {
+.article-section .right-article p::after {
   content: "Answer misery adieus add wooded how nay men before though. Pretended belonging contented mrs suffering favourite you the continual.";
 }
 
 #tasks {
-  background-color: #a277aa;
+  background-color: white;
 }
 
 .flex-gap-test {
@@ -460,7 +439,7 @@ footer p {
     padding-left: 5%;
   }
   main #bottom-aside {
-    width: 90%;
+    width: 92%;
   }
   main section {
     margin: 0 20px 0;
@@ -475,11 +454,10 @@ footer p {
   }
   main .left-article {
     background-color: pink;
-    padding-right: 15%;
-    width: 95%;
+    padding-right: 13%;
+    width: 92%;
   }
   main #right-article {
-    margin-bottom: 10px;
     width: 90%;
   }
 }

@@ -1,7 +1,6 @@
 @import './style/mixins.scss';
 @import './style/_variables';
 
-
 body {
     background-color: $primary;
     header {
@@ -152,12 +151,21 @@ main{
   @include size-margin($h:35rem, $m:20px 0);
   @include col-row();
     background-color: $body-color;
-    //there is the fuckin issue
     .left-aside{
       @include size-margin($h:32.8rem,$w:25%, $m:20px);
       background-color: $asideColor;
       padding-left: 10px;
       overflow: scroll;
+      button{
+        padding: 2px 3.2em;
+        color: $secondary;
+        background-color: $primary;
+        &:hover{
+          width: 10em;
+          color: $primary;
+          background-color: $secondary;
+        }
+      }
       p:first-letter{
         font-size: large;
         color: $body-color;
@@ -183,24 +191,24 @@ main{
         @include hoverText;
         }
       }
-      li{
+      //for
+      .while{
         @for $i from 1 through $liHeight{
-          height: $i * 14px;
+          height: $i * 15px;
+        }
+        //adds "!" for every list 
+        //listCount declared in the _variables.scss file
+            @while $listCount > 0 {
+              &::before{
+              content: '!';
+            }
+            $listCount: - 1;
         }
       }
       li:hover{
         @include hoverText;
       }
-      button:hover{
-        #pink{
-          color: palegreen;
-        }
-        // @each $theme, $i in $liColors{
-        //    .#{$theme} {
-        //     color: $i;
-        //   }
-        // }
-      }
+      
       section{
         @include size-margin($h:32rem,$w:84%, $m:20px 20px 30px .2rem);
         background-color: $dark-color;
@@ -210,12 +218,20 @@ main{
           @include articleBox;
           @include radiant;
           height: 5rem;
+          align-items: center;
+          display: inline-flexbox;
+          @each $color in yellow, green,black{
+            .#{$color}-color{
+              color:$color;
+            }
+          }
           span{
             color: $secondary;
           }
           button{
             background-color: transparent;
             border: none;
+            margin: 0 4.2em;
           }
       }
       aside{

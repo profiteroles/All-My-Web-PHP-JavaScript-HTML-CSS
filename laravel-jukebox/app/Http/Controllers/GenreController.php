@@ -14,8 +14,8 @@ class GenreController extends Controller
      */
     public function index()
     {
-        $genres = Genre::all();
-        return  view('genres.index', compact(['genres']));
+        $genres = Genre::paginate(10);
+        return  view('genres.index', compact(['genres']))->with("i", (\request()->input('page',1)-1)*10);
     }
 
     /**

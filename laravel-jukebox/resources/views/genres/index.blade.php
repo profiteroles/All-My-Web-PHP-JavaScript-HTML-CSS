@@ -19,7 +19,8 @@
                                 </a></li>
                         @endforeach
                     </ul>
-{{--                    <p class="text-gray-800">{{$genreCount}} genres on file.</p>--}}
+                    <p>{{$genres->onEachSide(2)->links()}}</p>
+                    <p class="text-gray-800">GenreCount genres on file.</p>
                 </div>
             </div>
         </div>

@@ -1,10 +1,12 @@
-@extends("layout")
+@extends("components.layout")
 
 @section('content')
-    @foreach ($posts as $post)
-        <article>
-            <h1><a href="/posts/{{$post->slug}}"> {{$post->title}}</a></h1>
-            <div>{{ $post->excerpt}}</div>
-        </article>
-    @endforeach
+    @include('_post-header')
+    @if($posts->count())
+        <main class="max-w-6xl mx-auto mt-6 lg:mt-20 space-y-6">
+            <x-posts-grid :posts="$posts"/>
+            @else
+                <p class="text-center">No posts yet. Please check back later.</p>
+            @endif
+        </main>
 @endsection

@@ -1,4 +1,4 @@
-img {
+.side-image {
   position: absolute;
 }
 
@@ -7,11 +7,13 @@ img {
           transform: rotate(180deg);
   top: 10px;
   left: 0;
+  z-index: -99;
 }
 
 #right-image {
   top: 0;
   right: 0;
+  z-index: 1;
 }
 
 h1 {
@@ -20,9 +22,10 @@ h1 {
   color: #57684d;
   padding-left: 15rem;
   padding-right: 15rem;
+  margin-bottom: 0;
 }
 
-h2 {
+h3 {
   position: relative;
   font-family: 'Josefin Sans', sans-serif;
   color: #58874d;

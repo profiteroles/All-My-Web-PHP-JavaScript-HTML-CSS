@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\PostController;
 use App\Models\User;
 use Illuminate\Support\Facades\Route;
 use App\Models\Post;
@@ -17,18 +18,10 @@ use \App\Models\Category;
 */
 
 //Route::get('/', fn() => view('posts', ['posts' => Post::all()]));
-Route::get('/',function (){
-//    \Illuminate\Support\Facades\DB::listen(function ($query){
-//        logger($query->sql,$query->bindings);
-//    });
-    return view('posts',[
-        'posts'=>Post::latest()->with(['category','author'])->get(),
-        'categories'=>Category::all(),
-    ]);
-})->name('home');
-Route::get('posts/{post:slug}', fn(Post $post) => view('post', ['post' => $post]));  //find a post by its id and pass it to a view called post
-Route::get('categories/{category:slug}', fn(Category $category)=>view('posts',[
-    'posts'=>$category->posts,
-    'currentCategory'=>$category,
-    'categories'=>Category::all()]))->name('category');
+Route::get('/',[PostController::class, 'index'])->name('home');
+Route::get('posts/{post:slug}', [PostController::class, 'show']);  //find a post by its id and pass it to a view called post
+//Route::get('categories/{category:slug}', fn(Category $category)=>view('posts',[
+//    'posts'=>$category->posts,
+//    'currentCategory'=>$category,
+//    'categories'=>Category::all()]))->name('category');
 Route::get('authors/{author:username}', fn(User $author)=>view('posts',['posts'=>$author->posts,'categories'=>Category::all(),]));

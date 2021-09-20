@@ -14,9 +14,17 @@
                 <img src="/images/logo.svg" alt="Laracasts Logo" width="165" height="16">
             </a>
         </div>
-        <div class="mt-8 md:mt-0">
-            <a href="/" class="text-xs font-bold uppercase">Home Page</a>
-
+        <div class="mt-8 md:mt-0 flex items-center">
+            @auth
+                <span class="text-xs font-bold uppercase">Hi {{auth()->user()->name}}</span>
+                <form action="/logout" method="POST" class="text- font-semibold text-blue-500 ml-6">
+                    @csrf
+                    <button type="submit">Log Out</button>
+                </form>
+            @else
+                <a href="/register" class="text-xs font-bold uppercase">Register</a>
+                <a href="/login" class="ml-6 text-xs font-bold uppercase">Log In</a>
+            @endauth
             <a href="#" class="bg-blue-500 ml-3 rounded-full text-xs font-semibold text-white uppercase py-3 px-5">
                 Subscribe for Updates
             </a>
@@ -52,4 +60,12 @@
         </div>
     </footer>
 </section>
+@if(session()->has('success'))
+    <div x-data="{show: true}"
+         x-init="setTimeout(()=> show = false, 4000)"
+         x-show="show"
+         class="fixed bg-blue-500 text-white py-2 px-4 rounded-xl bottom-3 right-3 text-sm">
+        <p>{{session('success')}}</p>
+    </div>
+@endif
 </body>

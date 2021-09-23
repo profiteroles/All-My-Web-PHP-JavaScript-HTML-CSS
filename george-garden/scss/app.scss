@@ -1,5 +1,6 @@
 @charset 'utf-8';
 
+@import 'mixins';
 @import 'settings';
 @import 'foundation';
 @import 'motion-ui';
@@ -91,33 +92,54 @@ img.below-navbar-image{
 }
 
 #img-top-left{
-  position: fixed;
+  @include img();
+  @include rotate(180);
   top: 0;
   left: 0;
-  height: 8em;
-  z-index: -1;
-  @include rotate(180);
 }
 
 #img-top-right{
-  position: fixed;
+  @include img();
   top: 0;
   right: 0;
-  z-index: -1;
 }
+
 #img-bottom-left{
-  position: fixed;
+  @include img();
   bottom: 0;
   left: 0;
-  height: 8em;
-  z-index: -1;
 }
 #img-bottom-right{
-  position: fixed;
+  @include img();
   bottom: 0;
   right: 0;
-  height: 8em;
-  z-index: -1;
+}
+#img-left-1{
+  @include img($h:19em, $z:-3);
+  left: 0;
+  top: 15em;
+}
+
+#img-1-right{
+  @include img($h:6em);
+  right: 4em;
+  top: 11.5em;
+}
+#img-2-right{
+  @include img($h:5em);
+  right: 0;
+  top: 16em;
+}
+
+#img-3-right{
+  @include img($h:5em);
+  right: 2em;
+  top: 24em;
+}
+#img-4-right{
+  @include img($h:5em);
+  right: 3.5em;
+  top: 34em;
 }
 
 #orbit-section{

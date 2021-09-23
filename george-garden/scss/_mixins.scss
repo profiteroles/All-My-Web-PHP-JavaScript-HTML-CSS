@@ -1,0 +1,5 @@
+@mixin img($h:8em,$z:-1) {
+    position: fixed;
+    z-index: $z;
+    height: $h;
+}

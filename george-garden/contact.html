@@ -1,0 +1,174 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>George's Garden</title>
+    <script src="https://kit.fontawesome.com/6dfbd7ac06.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/app.css">
+  </head>
+
+  <body>
+    <!-- Side Images -->
+    <img id="img-top-left" class="" src="./images/side/2.png" alt="Top Left Image">
+    <img id="img-top-right" class="" src="./images/side/1.png" alt="Top Right Image">
+    <img id="img-bottom-left" class="" src="./images/side/8.png" alt="Bottom Left Image">
+    <img id="img-bottom-right" class="" src="./images/side/9.png" alt="Bottom Right Image">
+    <img id="img-left-1" class="" src="./images/side/3-1.png" alt="Top Below Left Image">
+    <img id="img-1-right" class="" src="./images/side/4.png" alt="Top Left Image">
+    <img id="img-2-right" class="" src="./images/side/2.png" alt="Top Left Image">
+    <img id="img-3-right" class="" src="./images/side/6.png" alt="Top Left Image">
+    <img id="img-4-right" class="" src="./images/side/7.png" alt="Top Left Image">
+
+    <!-- Header Section -->
+    <div class="grid-container">
+      <div class="grid-x align-center">
+        <div class="cell medium-8 large-10 small-4 grid-x">
+          <div class="grid-y">
+            <a href="/">
+              <h1>George's</h1>
+              <h3>Garden Center</h3>
+            </a>
+          </div>
+          <a href="/"><img id="logo" src="./images/cstmgardenlogo.png" alt="Logo"></a>
+        </div>
+      </div>
+    </div>
+    <!-- Nav Bar -->
+    <div class="grid-x grid-margin-x margin ">
+      <div class="cell small-0 large-5 medium-4">
+      </div>
+      <div class="cell auto">
+        <div class="title-bar" data-responsive-toggle="animated-menu" data-hide-for="medium">
+          <button class="menu-icon" type="button" data-toggle></button>
+          <div class="title-bar-title"></div>
+        </div>
+        <div class="top-bar" id="animated-menu" data-animate="hinge-in-from-top hinge-out-from-left">
+          <div class="top-bar-left">
+            <ul class="dropdown menu" data-dropdown-menu>
+              <li><a class="btn left" href="/">Home</a></li>
+              <li><a class="btn" href="/about.html">About</a></li>
+              <li><a class="btn" href="/gallery.html">Gallery</a></li>
+              <li><a class="btn active" href="/contact.html">Contact</a>
+              </li>
+              <!-- Search Bar -->
+              <li>
+                <a class="btn right searchbar" href="#"><i class="fa fa-search fa-lg" aria-hidden="true"></i></a>
+              </li>
+              <input id="searchbar" class="input-field search-field" type="searchbar" placeholder="Search a Product" />
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Rest of the Body -->
+    <div class="grid-container">
+      <div id="form-area" class="grid-x align-center grid-padding-y mt-50">
+        <!-- Form -->
+        <form>
+          <div class="grid-container">
+            <div class="grid-x grid-padding-x">
+              <div class="medium-6 cell">
+                <input type="text" placeholder="Full Name">
+                <input type="email" placeholder="Your E-mail">
+                <input type="number" placeholder="Phone Number">
+                <input type="text" placeholder="Subject">
+              </div>
+              <div class="medium-6 cell">
+                <textarea name="message" id="message" cols="30" rows="6"></textarea>
+                <a class="button expanded" href="#">Send</a>
+              </div>
+            </div>
+          </div>
+        </form>
+        <!-- Map  -->
+        <iframe width="600" height="450" style="border:5px; border-radius: 15px;" loading="lazy" allowfullscreen
+          src="https://www.google.com/maps/embed/v1/search?q=35+Aberdeen+Street,+Perth+WA,+Australia&key=AIzaSyDq1L6PvVm1kXdqSfx0-9DOJ5n7XIwEqq4"></iframe>
+      </div>
+    </div>
+    <!-- Footer -->
+    <div class="grid-container fluid main-section">
+      <div class="large-12 medium-8 small-12 cell">
+        <div class="grid-x grid-padding-x">
+          <div class="large-3 medium-3 columns cell title">
+            <h4>George's Garden</h4>
+            <img src="/images/cstmgardenlogo.png">
+            <div class="grid-x align-justify">
+              <a href="#"><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></a>
+              <a href="#"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
+              <a href="#"><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></a>
+              <a href="#"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a>
+            </div>
+          </div>
+
+          <!-- Middle Section -->
+          <div class="large-4 medium-4 columns cell title contact-sec align-center">
+            <h4>Reach Us Out</h4>
+            <br>
+            <div class="grid-x grid-margin-x">
+              <div class="cell shrink">
+                <i class="fas fa-envelope fa-2x"></i>
+              </div>
+              <div class="cell auto">
+                <a href="mailto:erollooper@gmail.com">george@gardencenter.com</a>
+              </div>
+            </div>
+            <br>
+            <div class="grid-x grid-margin-x">
+              <div class="cell shrink">
+                <i class="fas fa-phone-alt fa-2x"></i>
+              </div>
+              <div class="cell auto">
+                <a href="">+61412345678</a>
+              </div>
+            </div>
+            <br>
+            <div class="grid-x grid-margin-x">
+              <div class="cell shrink">
+                <i class="fas fa-map-marker-alt fa-2x"></i>
+              </div>
+              <div class="cell auto">
+                <a href="">35 Abbedeen St, Perth<br>Australia 6000</a>
+              </div>
+            </div>
+          </div>
+          <!-- Right Section -->
+          <div class="large-4 medium-4 columns cell title">
+            <h4>Subscribe to Our News</h4>
+            <input type="text" placeholder="Email Address">
+            <a class="button expanded" href="#">Subscribe Now</a>
+            <!-- Up Top -->
+            <div class="large-12 medium-12">
+              <div class="grid-x grid-padding-x">
+                <div class="large-12 medium-12 columns search cell">
+                  <a href="#"><i class="fa fa-arrow-circle-o-up" aria-hidden="true"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End Right Section -->
+        </div>
+      </div>
+      <!-- Copyright Section -->
+      <div class="large-12 medium-12 cell columns">
+        <div class="grid-x grid-padding-x">
+          <div class="large-12 medium-12 columns cell footer">
+            <h6 class="text-center"> Copyright &copy; 2021 George's Garden Center </h6>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer End -->
+    </div>
+    </div>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDq1L6PvVm1kXdqSfx0-9DOJ5n7XIwEqq4&callback=myMap"></script>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/what-input/dist/what-input.js"></script>
+    <script src="node_modules/foundation-sites/dist/js/foundation.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+
+</html>

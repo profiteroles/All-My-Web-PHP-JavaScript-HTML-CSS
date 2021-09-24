@@ -1,0 +1,351 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>George's Garden</title>
+        <script src="https://kit.fontawesome.com/6dfbd7ac06.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="css/app.css">
+    </head>
+
+    <body>
+        <!-- Side Images -->
+        <img id="img-top-left" class="" src="./images/side/2.png" alt="Top Left Image">
+        <img id="img-top-right" class="" src="./images/side/1.png" alt="Top Right Image">
+        <img id="img-bottom-left" class="" src="./images/side/8.png" alt="Bottom Left Image">
+        <img id="img-bottom-right" class="" src="./images/side/9.png" alt="Bottom Right Image">
+        <img id="img-left-1" class="" src="./images/side/3-1.png" alt="Top Below Left Image">
+        <img id="img-1-right" class="" src="./images/side/4.png" alt="Top Left Image">
+        <img id="img-2-right" class="" src="./images/side/2.png" alt="Top Left Image">
+        <img id="img-3-right" class="" src="./images/side/6.png" alt="Top Left Image">
+        <img id="img-4-right" class="" src="./images/side/7.png" alt="Top Left Image">
+
+        <!-- Header Section -->
+        <div class="grid-container">
+            <div class="grid-x align-center">
+                <div class="cell medium-8 large-10 small-4 grid-x">
+                    <div class="grid-y">
+                        <a href="/">
+                            <h1>George's</h1>
+                            <h3>Garden Center</h3>
+                        </a>
+                    </div>
+                    <a href="/"><img id="logo" src="./images/cstmgardenlogo.png" alt="Logo"></a>
+                </div>
+            </div>
+        </div>
+        <!-- Nav Bar -->
+        <div class="grid-x grid-margin-x margin ">
+            <div class="cell small-0 large-5 medium-4"></div>
+            <div class="cell auto">
+                <div class="title-bar" data-responsive-toggle="animated-menu" data-hide-for="medium">
+                    <button class="menu-icon" type="button" data-toggle></button>
+                    <div class="title-bar-title"></div>
+                </div>
+                <div class="top-bar" id="animated-menu" data-animate="hinge-in-from-top hinge-out-from-left">
+                    <div class="top-bar-left">
+                        <ul class="dropdown menu" data-dropdown-menu>
+                            <li><a class="btn left" href="/">Home</a></li>
+                            <li><a class="btn" href="/about.html">About</a></li>
+                            <li><a class="btn active" href="/gallery.html">Gallery</a></li>
+                            <li><a class="btn" href="/contact.html">Contact</a>
+                            </li>
+                            <!-- Search Bar -->
+                            <li>
+                                <a class="btn right searchbar" href="#"><i class="fa fa-search fa-lg"
+                                        aria-hidden="true"></i></a>
+                            </li>
+                            <input id="searchbar" class="input-field search-field" type="searchbar"
+                                placeholder="Search a Product" />
+                            <li>
+                                <div class="cell medium-4 text-right">
+                                    <button class="button expanded mt-5" type="button" data-toggle="my-dropdown"><i
+                                            class="fa fa-shopping-cart " aria-hidden="true"> </i><span
+                                            id="cart-counter">&nbsp;0 - $ 0</span></button>
+                                    <div class="dropdown-pane" id="dropdown-cart" data-dropdown="yoruqk-dropdown"
+                                        data-auto-focus="true" aria-hidden="true" data-yeti-box="dropdown-cart"
+                                        data-resize="dropdown-cart" data-events="resize">
+                                        <div class="callout">
+                                            <p id="cart-callout">Shopping cart is empty!</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Rest of the Body -->
+        <div class="ecommerce-product-slider orbit" role="region" aria-label="Favorite Space Pictures" data-orbit>
+            <ul class="orbit-container">
+                <button class="orbit-previous"><span class="show-for-sr">Previous Slide</span>&#9664;&#xFE0E;</button>
+                <button class="orbit-next"><span class="show-for-sr">Next Slide</span>&#9654;&#xFE0E;</button>
+                <li class="is-active orbit-slide">
+                    <div class="row small-up-2 medium-up-4 large-up-5 align-center">
+                        <div class="column">
+                            <div class="product-card">
+                                <div class="product-card-thumbnail">
+                                    <a href="#"><img src="https://placehold.it/180x180" /></a>
+                                </div>
+                                <h2 class="product-card-title"><a href="#">Product Name</a></h2>
+                                <span class="product-card-desc">Product Description</span>
+                                <span class="product-card-price">$9.99</span><span
+                                    class="product-card-sale">$12.99</span>
+                                <div class="product-card-colors">
+                                    <button href="#" class="product-card-color-option"><img
+                                            src="https://placehold.it/30x30" /></button>
+                                    <button href="#" class="product-card-color-option"><img
+                                            src="https://placehold.it/30x30" /></button>
+                                    <button href="#" class="product-card-color-option"><img
+                                            src="https://placehold.it/30x30" /></button>
+                                    <button href="#" class="product-card-color-option"><img
+                                            src="https://placehold.it/30x30" /></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="product-card">
+                                <div class="product-card-thumbnail">
+                                    <a href="#"><img src="https://placehold.it/180x180" /></a>
+                                </div>
+                                <h2 class="product-card-title"><a href="#">Product Name</a></h2>
+                                <span class="product-card-desc">Product Description</span>
+                                <span class="product-card-price">$9.99</span><span
+                                    class="product-card-sale">$12.99</span>
+                                <div class="product-card-colors">
+                                    <button href="#" class="product-card-color-option"><img
+                                            src="https://placehold.it/30x30" /></button>
+                                    <button href="#" class="product-card-color-option"><img
+                                            src="https://placehold.it/30x30" /></button>
+                                    <button href="#" class="product-card-color-option"><img
+                                            src="https://placehold.it/30x30" /></button>
+                                    <button href="#" class="product-card-color-option"><img
+                                            src="https://placehold.it/30x30" /></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column hide-for-small-only">
+                            <div class="product-card">
+                                <div class="product-card-thumbnail">
+                                    <a href="#"><img src="https://placehold.it/180x180" /></a>
+                                </div>
+                                <h2 class="product-card-title"><a href="#">Product Name</a></h2>
+                                <span class="product-card-desc">Product Description</span>
+                                <span class="product-card-price">$9.99</span><span
+                                    class="product-card-sale">$12.99</span>
+                                <div class="product-card-colors">
+                                    <button href="#" class="product-card-color-option"><img
+                                            src="https://placehold.it/30x30" /></button>
+                                    <button href="#" class="product-card-color-option"><img
+                                            src="https://placehold.it/30x30" /></button>
+                                    <button href="#" class="product-card-color-option"><img
+                                            src="https://placehold.it/30x30" /></button>
+                                    <button href="#" class="product-card-color-option"><img
+                                            src="https://placehold.it/30x30" /></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column show-for-large">
+                            <div class="product-card">
+                                <div class="product-card-thumbnail">
+                                    <a href="#"><img src="https://placehold.it/180x180" /></a>
+                                </div>
+                                <h2 class="product-card-title"><a href="#">Product Name</a></h2>
+                                <span class="product-card-desc">Product Description</span>
+                                <span class="product-card-price">$9.99</span><span
+                                    class="product-card-sale">$12.99</span>
+                                <div class="product-card-colors">
+                                    <button href="#" class="product-card-color-option"><img
+                                            src="https://placehold.it/30x30" /></button>
+                                    <button href="#" class="product-card-color-option"><img
+                                            src="https://placehold.it/30x30" /></button>
+                                    <button href="#" class="product-card-color-option"><img
+                                            src="https://placehold.it/30x30" /></button>
+                                    <button href="#" class="product-card-color-option"><img
+                                            src="https://placehold.it/30x30" /></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column show-for-large">
+                            <div class="product-card">
+                                <div class="product-card-thumbnail">
+                                    <a href="#"><img src="https://placehold.it/180x180" /></a>
+                                </div>
+                                <h2 class="product-card-title"><a href="#">Product Name</a></h2>
+                                <span class="product-card-desc">Product Description</span>
+                                <span class="product-card-price">$9.99</span><span
+                                    class="product-card-sale">$12.99</span>
+                                <div class="product-card-colors">
+                                    <button href="#" class="product-card-color-option"><img
+                                            src="https://placehold.it/30x30" /></button>
+                                    <button href="#" class="product-card-color-option"><img
+                                            src="https://placehold.it/30x30" /></button>
+                                    <button href="#" class="product-card-color-option"><img
+                                            src="https://placehold.it/30x30" /></button>
+                                    <button href="#" class="product-card-color-option"><img
+                                            src="https://placehold.it/30x30" /></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="is-active orbit-slide">
+                    <div class="row small-up-2 medium-up-4 large-up-5 align-center">
+                        <div class="column">
+                            <div class="product-card">
+                                <div class="product-card-thumbnail">
+                                    <a href="#"><img src="https://placehold.it/180x180" /></a>
+                                </div>
+                                <h2 class="product-card-title"><a href="#">Product Name</a></h2>
+                                <span class="product-card-desc">Product Description</span>
+                                <span class="product-card-price">$9.99</span><span
+                                    class="product-card-sale">$12.99</span>
+                                <div class="product-card-colors">
+                                    <button href="#" class="product-card-color-option"><img
+                                            src="https://placehold.it/30x30" /></button>
+                                    <button href="#" class="product-card-color-option"><img
+                                            src="https://placehold.it/30x30" /></button>
+                                    <button href="#" class="product-card-color-option"><img
+                                            src="https://placehold.it/30x30" /></button>
+                                    <button href="#" class="product-card-color-option"><img
+                                            src="https://placehold.it/30x30" /></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="product-card">
+                                <div class="product-card-thumbnail">
+                                    <a href="#"><img src="https://placehold.it/180x180" /></a>
+                                </div>
+                                <h2 class="product-card-title"><a href="#">Product Name</a></h2>
+                                <span class="product-card-desc">Product Description</span>
+                                <span class="product-card-price">$9.99</span><span
+                                    class="product-card-sale">$12.99</span>
+                                <div class="product-card-colors">
+                                    <button href="#" class="product-card-color-option"><img
+                                            src="https://placehold.it/30x30" /></button>
+                                    <button href="#" class="product-card-color-option"><img
+                                            src="https://placehold.it/30x30" /></button>
+                                    <button href="#" class="product-card-color-option"><img
+                                            src="https://placehold.it/30x30" /></button>
+                                    <button href="#" class="product-card-color-option"><img
+                                            src="https://placehold.it/30x30" /></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column hide-for-small-only">
+                            <div class="product-card">
+                                <div class="product-card-thumbnail">
+                                    <a href="#"><img src="https://placehold.it/180x180" /></a>
+                                </div>
+                                <h2 class="product-card-title"><a href="#">Product Name</a></h2>
+                                <span class="product-card-desc">Product Description</span>
+                                <span class="product-card-price">$9.99</span><span
+                                    class="product-card-sale">$12.99</span>
+                                <div class="product-card-colors">
+                                    <button href="#" class="product-card-color-option"><img
+                                            src="https://placehold.it/30x30" /></button>
+                                    <button href="#" class="product-card-color-option"><img
+                                            src="https://placehold.it/30x30" /></button>
+                                    <button href="#" class="product-card-color-option"><img
+                                            src="https://placehold.it/30x30" /></button>
+                                    <button href="#" class="product-card-color-option"><img
+                                            src="https://placehold.it/30x30" /></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column show-for-large">
+                            <div class="product-card">
+                                <div class="product-card-thumbnail">
+                                    <a href="#"><img src="https://placehold.it/180x180" /></a>
+                                </div>
+                                <h2 class="product-card-title"><a href="#">Product Name</a></h2>
+                                <span class="product-card-desc">Product Description</span>
+                                <span class="product-card-price">$9.99</span><span
+                                    class="product-card-sale">$12.99</span>
+                                <div class="product-card-colors">
+                                    <button href="#" class="product-card-color-option"><img
+                                            src="https://placehold.it/30x30" /></button>
+                                    <button href="#" class="product-card-color-option"><img
+                                            src="https://placehold.it/30x30" /></button>
+                                    <button href="#" class="product-card-color-option"><img
+                                            src="https://placehold.it/30x30" /></button>
+                                    <button href="#" class="product-card-color-option"><img
+                                            src="https://placehold.it/30x30" /></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column show-for-large">
+                            <div class="product-card">
+                                <div class="product-card-thumbnail">
+                                    <a href="#"><img src="https://placehold.it/180x180" /></a>
+                                </div>
+                                <h2 class="product-card-title"><a href="#">Product Name</a></h2>
+                                <span class="product-card-desc">Product Description</span>
+                                <span class="product-card-price">$9.99</span><span
+                                    class="product-card-sale">$12.99</span>
+                                <div class="product-card-colors">
+                                    <button href="#" class="product-card-color-option"><img
+                                            src="https://placehold.it/30x30" /></button>
+                                    <button href="#" class="product-card-color-option"><img
+                                            src="https://placehold.it/30x30" /></button>
+                                    <button href="#" class="product-card-color-option"><img
+                                            src="https://placehold.it/30x30" /></button>
+                                    <button href="#" class="product-card-color-option"><img
+                                            src="https://placehold.it/30x30" /></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <nav class="orbit-bullets">
+                <button class="is-active" data-slide="0"><span class="show-for-sr">First slide details.</span><span
+                        class="show-for-sr">Current Slide</span></button>
+                <button data-slide="1"><span class="show-for-sr">Second slide details.</span></button>
+            </nav>
+        </div>
+
+
+
+        <!-- <div class="cell gallery-box">
+                    <h3 class="border">Fruits</h3>
+                </div>
+                <div class="cell scrollable auto">
+                    <div class="cell">
+                        <img src="images/seedlings/0.png" alt="Capsicum">
+                    </div>
+                    <img src="images/seedlings/1.png" alt="Ageratum">
+                    <img src="images/seedlings/2.png" alt="Alyssum">
+                    <img src="images/seedlings/3.png" alt="Antirrhinum">
+                    <img src="images/seedlings/4.png" alt="Antirrhinum Red">
+                    <img src="images/seedlings/5.png" alt="Artichoke">
+                    <img src="images/seedlings/6.png" alt="Beetroot">
+                    <img src="images/seedlings/7.png" alt="Broccoli">
+                    <img src="images/seedlings/8.png" alt="Cabbage Green">
+                    <img src="images/seedlings/9.png" alt="Cabbage Red">
+
+                </div>
+            </div>
+            <div class="grid-x align-center grid-padding-y large-12">
+                <div class="cell gallery-box">
+                    <h3 class="border">Fruits</h3>
+                </div>
+                <div class="cell gallery-box">
+                    <h3 class="border">Fruits</h3>
+                </div> -->
+
+        <!-- Footer -->
+
+        <!-- Footer End -->
+
+        <script src="node_modules/jquery/dist/jquery.js"></script>
+        <script src="node_modules/what-input/dist/what-input.js"></script>
+        <script src="node_modules/foundation-sites/dist/js/foundation.js"></script>
+        <script src="js/app.js"></script>
+    </body>
+
+</html>

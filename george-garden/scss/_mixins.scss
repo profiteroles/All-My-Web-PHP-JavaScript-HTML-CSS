@@ -2,4 +2,11 @@
     position: fixed;
     z-index: $z;
     height: $h;
+  @media only screen and (max-width: 600px){
+        display: none;
+    }
+}
+
+@mixin cstmRadius() {
+    border-radius: 30px 5px 30px 5px;
 }

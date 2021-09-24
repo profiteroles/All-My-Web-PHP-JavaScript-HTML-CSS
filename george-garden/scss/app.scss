@@ -64,25 +64,129 @@
 @include motion-ui-transitions;
 @include motion-ui-animations;
 
-
-.side-image-80 {
-    height: 80px;
+// Product Section
+.ecommerce-product-slider {
+  .orbit-previous,
+  .orbit-next {
+    color: $medium-gray;
   }
 
-.side-image-100 {
-    height: 100px;
+  .orbit-bullets button {
+    height: 0.65rem;
+    width: 0.65rem;
+  }
+
+  .product-card {
+    background-color: $white;
+    border: 1px solid $light-gray;
+    padding: 1rem;
+    margin-bottom: 1.5rem;  
+  }
+
+  .product-card-thumbnail {
+    display: block;
+    position: relative;
+  }
+
+  .product-card-title {
+    font-family: 'Open sans', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 600;
+    line-height: 1.45rem;
+    margin-top: 1rem;
+    margin-bottom: 0;
+  }
+
+  .product-card-desc {
+    color: $dark-gray;
+    display: block;
+    font-family: 'Open sans', sans-serif;
+    font-size: 0.85rem;
+  }
+
+  .product-card-price {
+    color: darken($dark-gray,30%);
+    display: inline-block;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-top: 0.8rem;
+  }
+
+  .product-card-sale {
+    color: $medium-gray;
+    display: inline-block;
+    font-size: 0.85rem;
+    margin-left: 0.3rem;
+    text-decoration: line-through;
+  }
+
+  .product-card-colors {
+    display: block;
+    margin-top: 0.8rem;
+  }
+
+  .product-card-color-option {
+    display: inline-block;
+    height: 25px;
+    width: 25px;
+  }
 }
 
 
-.blue{
-  background-color: blue;
-  border: solid 2px red;
+// End of Product Sec
+
+//Gallery Section
+div.scrollable {
+  height: 140px;
+  padding: 2em;
+  margin: 1em 0.5em 0 0;
+  background-color: $light-gray;
+  overflow-x: scroll;
+  overflow: -moz-scrollbars-horizontal;
 }
-.green{
-  background-color: green;
-  border: solid 2px red;
+
+.gallery-box{
+  height: 140px;
+  width: 140px;
+  margin: 1em 0.5em 0 0;
+  background-color: $light-gray;
+  text-align: center;
 }
-  
+//Gallery Section End
+
+.search-field {
+  width: 0;
+  height: 40px;
+  margin-left: 1rem;
+  padding: 0;
+  border: none;
+  @include cstmRadius();
+  transition: all 0.5s ease;
+  &:focus, textarea:focus, select:focus{
+    outline: none;
+  }
+}
+.searchbar i{
+  color: $white;
+  transform: rotate(0deg);
+  font-size: 1rem;
+  transition:all 0.5s ease;
+  &:hover{
+  color:$light-gray;
+  transform: rotate(360deg);
+  }
+}
+
+.expand-search {
+  width: 80%;
+  max-width: calc(80% - 3rem);
+  border: 1px solid #c9c9c9;
+  padding: 1rem;
+  margin-top: .3rem;
+}
+
+// All Images
+
 #left-image {
   @include rotate(180);
   }
@@ -109,6 +213,7 @@ img.below-navbar-image{
   bottom: 0;
   left: 0;
 }
+
 #img-bottom-right{
   @include img();
   bottom: 0;
@@ -145,7 +250,16 @@ img.below-navbar-image{
 #orbit-section{
   margin-top: 50px;
 }
-  
+
+//Contact Page body Area 
+.mt-50{
+margin-top: 50px;
+}
+
+.mt-5{
+  margin-top: 5px;
+}
+//Contact Page body Area End
   h1 {
     font-family: 'Prata', serif;
     color: #57684d;
@@ -163,6 +277,9 @@ img.below-navbar-image{
 
   #logo{
     height: 120px;
+    @media only screen and (max-width: 600px){
+      height: 80px;
+    }
   }
 
 /* Creating pseudo-class */
@@ -175,10 +292,115 @@ footer{
   z-index: -2;
 }
 
-a{
-  color: #58874d;
+.blue {
+  border: 2px red solid;
+  background-color: blue;
+}
+
+.red {
+  border: 2px blue solid;
+  background-color: red;
+}
+
+.title-bar{
+background-color: $light-gray;
+border-radius: 5px 5px 0 0;
+}
+
+.btn{
+  background-color: #58874d;
+  opacity: 40%;
+  color: $white;
   &:hover{
-    color: black;
-    font-weight: bold;
+    background-color: $success-color;
+    color: $white;
+    opacity: 110%;
   }
 }
+.left{
+  border-radius: 30px 0 0 5px;
+}
+.right{
+  border-radius: 0 5px 30px 0;
+  background-color: $success-color;
+}
+
+
+.active{
+  background-color: $success-color;
+  font-weight: bold;
+  opacity: 110%;
+}
+
+// Footer Section
+.main-section{
+  position: relative;
+  bottom:-138px;
+  background-color: #57684d;
+  padding:40px;
+  margin-top:80px !important;
+  font-family: 'Josefin Sans', sans-serif;
+  @include cstmRadius();
+  }
+
+  .title h4,.search h4{
+  font-family: 'Josefin Sans', sans-serif;
+  color:#d2d2d2;
+  margin-bottom:15px;
+  margin-top: 10px;
+  }
+  .title a{
+  color:#a5a5a5;
+  &:hover{
+    color: $white;
+  }
+  }
+  .search{
+  position:relative;
+  margin-top: 20px;
+    i{
+    position: absolute;
+    top:0px;
+    font-size: 3rem;
+    color: $secondary-color;
+    right:10px;
+    transform: rotate(0deg);
+    transition:0.5s;
+      &:hover{
+      color:$white;
+      font-size:3.5rem;
+      transform: rotate(360deg);
+      }
+    }
+  }
+  .expanded{
+    @include cstmRadius();
+  }
+  
+  .footer{
+  text-align: center;
+  color:#fff;
+  margin:10px 0px -20px 0px;
+  }
+
+  .fa-icon {
+    color: $white;
+    position: relative;
+    margin: 20px 20px 0 0px;
+    float: right;
+    size: 7em;
+    &:hover{
+      color:$black;
+      transform: scale(2);
+      &:after{
+      transform: translate(5px, -50%);
+      }
+    }
+    
+}
+
+.contact-sec{
+  color: $white;
+}
+
+

@@ -1,253 +1,856 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html class="no-js" lang="en">
 
     <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="css/test.css">
-        <!-- Compressed CSS -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation.min.css"
-            integrity="sha256-ogmFxjqiTMnZhxCqVmcqTvjfe1Y/ec4WaRj/aQPvn+I=" crossorigin="anonymous">
-
-        <!-- Compressed JavaScript -->
-        <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/js/foundation.min.js"
-            integrity="sha256-pRF3zifJRA9jXGv++b06qwtSqX1byFQOLjqa2PTEb2o=" crossorigin="anonymous"></script>
-        <title>Document</title>
+        <title>George's Garden</title>
+        <script src="https://kit.fontawesome.com/6dfbd7ac06.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="css/app.css">
     </head>
 
     <body>
-        <div class="ecommerce-product-slider orbit" role="region" aria-label="Favorite Space Pictures" data-orbit>
-            <ul class="orbit-container">
-                <button class="orbit-previous"><span class="show-for-sr">Previous Slide</span>&#9664;&#xFE0E;</button>
-                <button class="orbit-next"><span class="show-for-sr">Next Slide</span>&#9654;&#xFE0E;</button>
-                <li class="is-active orbit-slide">
-                    <div class="row small-up-2 medium-up-4 large-up-5 align-center">
-                        <div class="column">
-                            <div class="product-card">
-                                <div class="product-card-thumbnail">
-                                    <a href="#"><img src="https://placehold.it/180x180" /></a>
-                                </div>
-                                <h2 class="product-card-title"><a href="#">Product Name</a></h2>
-                                <span class="product-card-desc">Product Description</span>
-                                <span class="product-card-price">$9.99</span><span
-                                    class="product-card-sale">$12.99</span>
-                                <div class="product-card-colors">
-                                    <button href="#" class="product-card-color-option"><img
-                                            src="https://placehold.it/30x30" /></button>
-                                    <button href="#" class="product-card-color-option"><img
-                                            src="https://placehold.it/30x30" /></button>
-                                    <button href="#" class="product-card-color-option"><img
-                                            src="https://placehold.it/30x30" /></button>
-                                    <button href="#" class="product-card-color-option"><img
-                                            src="https://placehold.it/30x30" /></button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="column">
-                            <div class="product-card">
-                                <div class="product-card-thumbnail">
-                                    <a href="#"><img src="https://placehold.it/180x180" /></a>
-                                </div>
-                                <h2 class="product-card-title"><a href="#">Product Name</a></h2>
-                                <span class="product-card-desc">Product Description</span>
-                                <span class="product-card-price">$9.99</span><span
-                                    class="product-card-sale">$12.99</span>
-                                <div class="product-card-colors">
-                                    <button href="#" class="product-card-color-option"><img
-                                            src="https://placehold.it/30x30" /></button>
-                                    <button href="#" class="product-card-color-option"><img
-                                            src="https://placehold.it/30x30" /></button>
-                                    <button href="#" class="product-card-color-option"><img
-                                            src="https://placehold.it/30x30" /></button>
-                                    <button href="#" class="product-card-color-option"><img
-                                            src="https://placehold.it/30x30" /></button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="column hide-for-small-only">
-                            <div class="product-card">
-                                <div class="product-card-thumbnail">
-                                    <a href="#"><img src="https://placehold.it/180x180" /></a>
-                                </div>
-                                <h2 class="product-card-title"><a href="#">Product Name</a></h2>
-                                <span class="product-card-desc">Product Description</span>
-                                <span class="product-card-price">$9.99</span><span
-                                    class="product-card-sale">$12.99</span>
-                                <div class="product-card-colors">
-                                    <button href="#" class="product-card-color-option"><img
-                                            src="https://placehold.it/30x30" /></button>
-                                    <button href="#" class="product-card-color-option"><img
-                                            src="https://placehold.it/30x30" /></button>
-                                    <button href="#" class="product-card-color-option"><img
-                                            src="https://placehold.it/30x30" /></button>
-                                    <button href="#" class="product-card-color-option"><img
-                                            src="https://placehold.it/30x30" /></button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="column show-for-large">
-                            <div class="product-card">
-                                <div class="product-card-thumbnail">
-                                    <a href="#"><img src="https://placehold.it/180x180" /></a>
-                                </div>
-                                <h2 class="product-card-title"><a href="#">Product Name</a></h2>
-                                <span class="product-card-desc">Product Description</span>
-                                <span class="product-card-price">$9.99</span><span
-                                    class="product-card-sale">$12.99</span>
-                                <div class="product-card-colors">
-                                    <button href="#" class="product-card-color-option"><img
-                                            src="https://placehold.it/30x30" /></button>
-                                    <button href="#" class="product-card-color-option"><img
-                                            src="https://placehold.it/30x30" /></button>
-                                    <button href="#" class="product-card-color-option"><img
-                                            src="https://placehold.it/30x30" /></button>
-                                    <button href="#" class="product-card-color-option"><img
-                                            src="https://placehold.it/30x30" /></button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="column show-for-large">
-                            <div class="product-card">
-                                <div class="product-card-thumbnail">
-                                    <a href="#"><img src="https://placehold.it/180x180" /></a>
-                                </div>
-                                <h2 class="product-card-title"><a href="#">Product Name</a></h2>
-                                <span class="product-card-desc">Product Description</span>
-                                <span class="product-card-price">$9.99</span><span
-                                    class="product-card-sale">$12.99</span>
-                                <div class="product-card-colors">
-                                    <button href="#" class="product-card-color-option"><img
-                                            src="https://placehold.it/30x30" /></button>
-                                    <button href="#" class="product-card-color-option"><img
-                                            src="https://placehold.it/30x30" /></button>
-                                    <button href="#" class="product-card-color-option"><img
-                                            src="https://placehold.it/30x30" /></button>
-                                    <button href="#" class="product-card-color-option"><img
-                                            src="https://placehold.it/30x30" /></button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-                <li class="is-active orbit-slide">
-                    <div class="row small-up-2 medium-up-4 large-up-5 align-center">
-                        <div class="column">
-                            <div class="product-card">
-                                <div class="product-card-thumbnail">
-                                    <a href="#"><img src="https://placehold.it/180x180" /></a>
-                                </div>
-                                <h2 class="product-card-title"><a href="#">Product Name</a></h2>
-                                <span class="product-card-desc">Product Description</span>
-                                <span class="product-card-price">$9.99</span><span
-                                    class="product-card-sale">$12.99</span>
-                                <div class="product-card-colors">
-                                    <button href="#" class="product-card-color-option"><img
-                                            src="https://placehold.it/30x30" /></button>
-                                    <button href="#" class="product-card-color-option"><img
-                                            src="https://placehold.it/30x30" /></button>
-                                    <button href="#" class="product-card-color-option"><img
-                                            src="https://placehold.it/30x30" /></button>
-                                    <button href="#" class="product-card-color-option"><img
-                                            src="https://placehold.it/30x30" /></button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="column">
-                            <div class="product-card">
-                                <div class="product-card-thumbnail">
-                                    <a href="#"><img src="https://placehold.it/180x180" /></a>
-                                </div>
-                                <h2 class="product-card-title"><a href="#">Product Name</a></h2>
-                                <span class="product-card-desc">Product Description</span>
-                                <span class="product-card-price">$9.99</span><span
-                                    class="product-card-sale">$12.99</span>
-                                <div class="product-card-colors">
-                                    <button href="#" class="product-card-color-option"><img
-                                            src="https://placehold.it/30x30" /></button>
-                                    <button href="#" class="product-card-color-option"><img
-                                            src="https://placehold.it/30x30" /></button>
-                                    <button href="#" class="product-card-color-option"><img
-                                            src="https://placehold.it/30x30" /></button>
-                                    <button href="#" class="product-card-color-option"><img
-                                            src="https://placehold.it/30x30" /></button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="column hide-for-small-only">
-                            <div class="product-card">
-                                <div class="product-card-thumbnail">
-                                    <a href="#"><img src="https://placehold.it/180x180" /></a>
-                                </div>
-                                <h2 class="product-card-title"><a href="#">Product Name</a></h2>
-                                <span class="product-card-desc">Product Description</span>
-                                <span class="product-card-price">$9.99</span><span
-                                    class="product-card-sale">$12.99</span>
-                                <div class="product-card-colors">
-                                    <button href="#" class="product-card-color-option"><img
-                                            src="https://placehold.it/30x30" /></button>
-                                    <button href="#" class="product-card-color-option"><img
-                                            src="https://placehold.it/30x30" /></button>
-                                    <button href="#" class="product-card-color-option"><img
-                                            src="https://placehold.it/30x30" /></button>
-                                    <button href="#" class="product-card-color-option"><img
-                                            src="https://placehold.it/30x30" /></button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="column show-for-large">
-                            <div class="product-card">
-                                <div class="product-card-thumbnail">
-                                    <a href="#"><img src="https://placehold.it/180x180" /></a>
-                                </div>
-                                <h2 class="product-card-title"><a href="#">Product Name</a></h2>
-                                <span class="product-card-desc">Product Description</span>
-                                <span class="product-card-price">$9.99</span><span
-                                    class="product-card-sale">$12.99</span>
-                                <div class="product-card-colors">
-                                    <button href="#" class="product-card-color-option"><img
-                                            src="https://placehold.it/30x30" /></button>
-                                    <button href="#" class="product-card-color-option"><img
-                                            src="https://placehold.it/30x30" /></button>
-                                    <button href="#" class="product-card-color-option"><img
-                                            src="https://placehold.it/30x30" /></button>
-                                    <button href="#" class="product-card-color-option"><img
-                                            src="https://placehold.it/30x30" /></button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="column show-for-large">
-                            <div class="product-card">
-                                <div class="product-card-thumbnail">
-                                    <a href="#"><img src="https://placehold.it/180x180" /></a>
-                                </div>
-                                <h2 class="product-card-title"><a href="#">Product Name</a></h2>
-                                <span class="product-card-desc">Product Description</span>
-                                <span class="product-card-price">$9.99</span><span
-                                    class="product-card-sale">$12.99</span>
-                                <div class="product-card-colors">
-                                    <button href="#" class="product-card-color-option"><img
-                                            src="https://placehold.it/30x30" /></button>
-                                    <button href="#" class="product-card-color-option"><img
-                                            src="https://placehold.it/30x30" /></button>
-                                    <button href="#" class="product-card-color-option"><img
-                                            src="https://placehold.it/30x30" /></button>
-                                    <button href="#" class="product-card-color-option"><img
-                                            src="https://placehold.it/30x30" /></button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-            </ul>
-            <nav class="orbit-bullets">
-                <button class="is-active" data-slide="0"><span class="show-for-sr">First slide details.</span><span
-                        class="show-for-sr">Current Slide</span></button>
-                <button data-slide="1"><span class="show-for-sr">Second slide details.</span></button>
-            </nav>
+        <!-- Side Images -->
+        <img id="img-top-left" class="" src="./images/side/2.png" alt="Top Left Image">
+        <img id="img-top-right" class="" src="./images/side/1.png" alt="Top Right Image">
+        <img id="img-bottom-left" class="" src="./images/side/8.png" alt="Bottom Left Image">
+        <img id="img-bottom-right" class="" src="./images/side/9.png" alt="Bottom Right Image">
+        <img id="img-left-1" class="" src="./images/side/3-1.png" alt="Top Below Left Image">
+        <img id="img-1-right" class="" src="./images/side/4.png" alt="Top Left Image">
+        <img id="img-2-right" class="" src="./images/side/2.png" alt="Top Left Image">
+        <img id="img-3-right" class="" src="./images/side/6.png" alt="Top Left Image">
+        <img id="img-4-right" class="" src="./images/side/7.png" alt="Top Left Image">
+        <!-- Check Out Modal -->
+
+        <div class="reveal" id="reveal_modal" data-reveal>
+            <h2>Your Cart</h2>
+
+            <div class="shopping-cart">
+                <div class="column-labels">
+                    <label class="product-image">Image</label>
+                    <label class="product-details">Product</label>
+                    <label class="product-price">Price</label>
+                    <label class="product-quantity">Quantity</label>
+                    <label class="product-removal">Remove</label>
+                    <label class="product-line-price">Total</label>
+                </div>
+            </div>
+            <div class="totals">
+                <div class="totals-item">
+                    <label>Subtotal</label>
+                    <div class="totals-value" id="cart-subtotal">0</div>
+                </div>
+                <div class="totals-item">
+                    <label>GST</label>
+                    <div class="totals-value" id="cart-tax">0</div>
+                </div>
+                <div class="totals-item">
+                    <label>Shipping</label>
+                    <div class="totals-value" id="cart-shipping">0</div>
+                </div>
+                <div class="totals-item totals-item-total">
+                    <label>Total</label>
+                    <div class="totals-value" id="cart-total">0</div>
+                </div>
+            </div>
+            <button class="checkout" data-close>Checkout</button>
+            <button class="close-button" data-close aria-label="Close reveal" type="button">
+                <span aria-hidden="true">×</span>
+            </button>
         </div>
 
+        <!-- Header Section -->
+        <div class="grid-container">
+            <div class="grid-x align-center">
+                <div class="cell medium-8 large-10 small-4 grid-x">
+                    <div class="grid-y">
+                        <a href="/">
+                            <h1>George's</h1>
+                            <h3>Garden Center</h3>
+                        </a>
+                    </div>
+                    <a href="/"><img id="logo" src="./images/cstmgardenlogo.png" alt="Logo"></a>
+                </div>
+            </div>
+        </div>
+        <!-- Nav Bar -->
+        <div class="grid-x grid-margin-x margin ">
+            <div class="cell small-0 large-5 medium-4">
+            </div>
+            <div class="cell auto">
+                <div class="title-bar" data-responsive-toggle="animated-menu" data-hide-for="medium">
+                    <button class="menu-icon" type="button" data-toggle></button>
+                    <div class="title-bar-title"></div>
+                </div>
+                <div class="top-bar" id="animated-menu" data-animate="hinge-in-from-top hinge-out-from-left">
+                    <div class="top-bar-left">
+                        <ul class="dropdown menu" data-dropdown-menu>
+                            <li><a class="btn left" href="/">Home</a></li>
+                            <li><a class="btn" href="/about.html">About</a></li>
+                            <li><a class="btn active" href="/gallery.html">Gallery</a></li>
+                            <li><a class="btn" href="/contact.html">Contact</a>
+                            </li>
+                            <!-- Search Bar -->
+                            <li>
+                                <a class="btn right searchbar" href="#"><i class="fa fa-search fa-lg"
+                                        aria-hidden="true"></i></a>
+                            </li>
+                            <input id="searchbar" class="input-field search-field " type="searchbar"
+                                placeholder="Search a Product" />
 
+                            <!-- Shopping Cart -->
+                            <li>
+                                <div class="cell medium-4 text-right">
+                                    <button class="button expanded added mt-5" data-open="reveal_modal"><i
+                                            class="fa fa-shopping-cart " aria-hidden="true">
+                                        </i><span id="cart-counter">&nbsp;<strong>0</strong></span></button>
+                                </div>
+                    </div>
+                    </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <!-- Rest of the Body -->
+
+        <div class="grid-container">
+            <div class="grid-x align-center grid-padding-y">
+                <!-- 1 Row -->
+                <div class="cell gallery-box medium-3 left">
+                    <h3 class="">Fruits</h3>
+                </div>
+                <div id="horizontalScroll" class="cell medium-7 row auto">
+                    <div class="large-12 columns">
+                        <!-- 1 Card -->
+                        <div class="card-item product-card">
+                            <div class="product-card-thumbnail">
+                                <img src="images/products/fruits/0.png" alt="Strawberry">
+                            </div>
+                            <h4 class="product-card-title">Strawberry</h4>
+                            <span class="product-card-desc">Wedge Shaped Fruit</span>
+                            <span class="product-card-price">$5.99</span> <span class="product-card-sale">$12.99</span>
+                            <button class="button expanded add-to-cart">Add to Cart</button>
+                        </div>
+                        <!-- 2 Card -->
+                        <div class="card-item product-card">
+                            <div class="product-card-thumbnail">
+                                <img src="images/products/fruits/1.png" alt="Mulberry">
+                            </div>
+                            <h4 class="product-card-title">Mulberry</h4>
+                            <span class="product-card-desc">Black Fruiting Mulberry</span>
+                            <span class="product-card-price">$19.99</span> <span class="product-card-sale">$32.99</span>
+                            <button class="button expanded add-to-cart">Add to Cart</button>
+                        </div>
+                        <!-- 3 Card -->
+                        <div class="card-item product-card">
+                            <div class="product-card-thumbnail">
+                                <img src="images/products/fruits/2.png" alt="Fig">
+                            </div>
+                            <h4 class="product-card-title">Fig</h4>
+                            <span class="product-card-desc">Fig Fruit Tree</span>
+                            <span class="product-card-price">$39.99</span> <span class="product-card-sale">$52.99</span>
+                            <button class="button expanded add-to-cart">Add to Cart</button>
+                        </div>
+                        <!-- 4 Card -->
+                        <div class="card-item product-card">
+                            <div class="product-card-thumbnail">
+                                <img src="images/products/fruits/3.png" alt="Pear">
+                            </div>
+                            <h4 class="product-card-title">Pear</h4>
+                            <span class="product-card-desc">Nashi/Asian Pear</span>
+                            <span class="product-card-price">$19.99</span> <span class="product-card-sale">$32.99</span>
+                            <button class="button expanded add-to-cart">Add to Cart</button>
+                        </div>
+                        <!-- 5 Card -->
+                        <div class="card-item product-card">
+                            <div class="product-card-thumbnail">
+                                <img src="images/products/fruits/4.png" alt="Tomato">
+                            </div>
+                            <h4 class="product-card-title">Tomato</h4>
+                            <span class="product-card-desc">Gourmet Truss Tray</span>
+                            <span class="product-card-price">$9.99</span> <span class="product-card-sale">$22.99</span>
+                            <button class="button expanded add-to-cart">Add to Cart</button>
+                        </div>
+                        <!-- 6 Card -->
+                        <div class="card-item product-card">
+                            <div class="product-card-thumbnail">
+                                <img src="images/products/fruits/5.png" alt="Black Currant">
+                            </div>
+                            <h4 class="product-card-title">Black Currant</h4>
+                            <span class="product-card-desc">Garden Fresh</span>
+                            <span class="product-card-price">$29.99</span> <span class="product-card-sale">$42.99</span>
+                            <button class="button expanded add-to-cart">Add to Cart</button>
+                        </div>
+                        <!-- 7 Card -->
+                        <div class="card-item product-card">
+                            <div class="product-card-thumbnail">
+                                <img src="images/products/fruits/6.png" alt="Yellow Tomato">
+                            </div>
+                            <h4 class="product-card-title">Yellow Tomato</h4>
+                            <span class="product-card-desc">Lemon Drop Diggers</span>
+                            <span class="product-card-price">$39.99</span> <span class="product-card-sale">$52.99</span>
+                            <button class="button expanded add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- 1 Row End -->
+                <!-- 2 Row -->
+                <div class="cell gallery-box medium-3 left">
+                    <h3 class="">Herbs</h3>
+                </div>
+                <div id="horizontalScroll" class="cell medium-7 row auto">
+                    <div class="large-12 columns">
+                        <!-- 1 Card -->
+                        <div class="card-item product-card">
+                            <div class="product-card-thumbnail">
+                                <img src="images/products/herbs/0.png" alt="Purple Basil">
+                            </div>
+                            <h4 class="product-card-title">Purple Basil</h4>
+                            <span class="product-card-desc">Garden Fresh</span>
+                            <span class="product-card-price">$12.99</span>
+                            <!-- <div class="product-card-colors"> -->
+                            <button class="button expanded add-to-cart">Add to Cart</button>
+                        </div>
+                        <!-- 2 Card -->
+                        <div class="card-item product-card">
+                            <div class="product-card-thumbnail">
+                                <img src="images/products/herbs/1.png" alt="Ageratum Pink">
+                            </div>
+                            <h4 class="product-card-title">Ageratum Pink</h4>
+                            <span class="product-card-desc">Floss Flower</span>
+                            <span class="product-card-price">$14.99</span>
+                            <button class="button expanded add-to-cart">Add to Cart</button>
+                        </div>
+                        <!-- 3 Card -->
+                        <div class="card-item product-card">
+                            <div class="product-card-thumbnail">
+                                <img src="images/products/herbs/2.png" alt="Alyssum Snow">
+                            </div>
+                            <h4 class="product-card-title">Alyssum Snow</h4>
+                            <span class="product-card-desc">Sweet Alyssum</span>
+                            <span class="product-card-price">$8.99</span>
+                            <button class="button expanded add-to-cart">Add to Cart</button>
+                        </div>
+                        <!-- 4 Card -->
+                        <div class="card-item product-card">
+                            <div class="product-card-thumbnail">
+                                <img src="images/products/herbs/3.png" alt="Fennel">
+                            </div>
+                            <h4 class="product-card-title">Fennel</h4>
+                            <span class="product-card-desc">Garden Fresh</span>
+                            <span class="product-card-price">$22.00</span>
+                            <button class="button expanded add-to-cart">Add to Cart</button>
+                        </div>
+                        <!-- 5 Card -->
+                        <div class="card-item product-card">
+                            <div class="product-card-thumbnail">
+                                <img src="images/products/herbs/4.png" alt="Lavender">
+                            </div>
+                            <h4 class="product-card-title">Lavender</h4>
+                            <span class="product-card-desc">Castillano Tray</span>
+                            <span class="product-card-price">$10.59</span>
+                            <button class="button expanded add-to-cart">Add to Cart</button>
+                        </div>
+                        <!-- 6 Card -->
+                        <div class="card-item product-card">
+                            <div class="product-card-thumbnail">
+                                <img src="images/products/herbs/5.png" alt="Basil">
+                            </div>
+                            <h4 class="product-card-title">Basil</h4>
+                            <span class="product-card-desc">Common Sweet</span>
+                            <span class="product-card-price">$15.99</span>
+                            <button class="button expanded add-to-cart">Add to Cart</button>
+                        </div>
+                        <!-- 7 Card -->
+                        <div class="card-item product-card">
+                            <div class="product-card-thumbnail">
+                                <img src="images/products/herbs/6.png" alt="Chilli">
+                            </div>
+                            <h4 class="product-card-title">Chilli</h4>
+                            <span class="product-card-desc">Chilli Hot Tray</span>
+                            <span class="product-card-price">$4.99</span>
+                            <button class="button expanded add-to-cart">Add to Cart</button>
+                        </div>
+                        <!-- 8 Card -->
+                        <div class="card-item product-card">
+                            <div class="product-card-thumbnail">
+                                <img src="images/products/herbs/7.png" alt="Chives">
+                            </div>
+                            <h4 class="product-card-title">Chives</h4>
+                            <span class="product-card-desc">Garden Fresh</span>
+                            <span class="product-card-price">$14.99</span>
+                            <button class="button expanded add-to-cart">Add to Cart</button>
+                        </div>
+                        <!-- 9 Card -->
+                        <div class="card-item product-card">
+                            <div class="product-card-thumbnail">
+                                <img src="images/products/herbs/8.png" alt="Herb Mix Tray">
+                            </div>
+                            <h4 class="product-card-title">Herb Mix Tray</h4>
+                            <span class="product-card-desc">Garden Fresh</span>
+                            <span class="product-card-price">$17.50</span>
+                            <button class="button expanded add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- 2 Row End -->
+                <!-- 3 Row -->
+                <div class="cell gallery-box medium-3 left">
+                    <h3 class="">Indoor</h3>
+                </div>
+                <div id="horizontalScroll" class="cell medium-7 row auto">
+                    <div class="large-12 columns">
+                        <!-- 1 Card -->
+                        <div class="card-item product-card">
+                            <div class="product-card-thumbnail">
+                                <img src="images/products/indoor/0.png" alt="Impulse Tray">
+                            </div>
+                            <h4 class="product-card-title">Impulse Tray</h4>
+                            <span class="product-card-desc">Impatiens</span>
+                            <span class="product-card-price">$9.99</span> <span class="product-card-sale">$12.99</span>
+                            <button class="button expanded add-to-cart">Add to Cart</button>
+                        </div>
+                        <!-- 2 Card -->
+                        <div class="card-item product-card">
+                            <div class="product-card-thumbnail">
+                                <img src="images/products/indoor/1.png" alt="White Tray">
+                            </div>
+                            <h4 class="product-card-title">White Tray</h4>
+                            <span class="product-card-desc">Impatiens</span>
+                            <span class="product-card-price">$15.99</span> <span class="product-card-sale">$20.99</span>
+                            <button class="button expanded add-to-cart">Add to Cart</button>
+                        </div>
+                        <!-- 3 Card -->
+                        <div class="card-item product-card">
+                            <div class="product-card-thumbnail">
+                                <img src="images/products/indoor/2.png" alt="Starry Eye Tray">
+                            </div>
+                            <h4 class="product-card-title">Starry Eye Tray</h4>
+                            <span class="product-card-desc">Impatiens</span>
+                            <span class="product-card-price">$14.99</span> <span class="product-card-sale">$19.99</span>
+                            <button class="button expanded add-to-cart">Add to Cart</button>
+                        </div>
+                        <!-- 4 Card -->
+                        <div class="card-item product-card">
+                            <div class="product-card-thumbnail">
+                                <img src="images/products/indoor/3.png" alt="Othonna">
+                            </div>
+                            <h4 class="product-card-title">Othonna</h4>
+                            <span class="product-card-desc">Ruby Necklace</span>
+                            <span class="product-card-price">$19.99</span> <span class="product-card-sale">$24.99</span>
+                            <button class="button expanded add-to-cart">Add to Cart</button>
+                        </div>
+                        <!-- 5 Card -->
+                        <div class="card-item product-card">
+                            <div class="product-card-thumbnail">
+                                <img src="images/products/indoor/4.png" alt="Peperomia">
+                            </div>
+                            <h4 class="product-card-title">Peperomia</h4>
+                            <span class="product-card-desc">Trailing Peperomia</span>
+                            <span class="product-card-price">$8.99</span> <span class="product-card-sale">$11.99</span>
+                            <button class="button expanded add-to-cart">Add to Cart</button>
+                        </div>
+                        <!-- 6 Card -->
+                        <div class="card-item product-card">
+                            <div class="product-card-thumbnail">
+                                <img src="images/products/indoor/5.png" alt="Peperomia">
+                            </div>
+                            <h4 class="product-card-title">Peperomia</h4>
+                            <span class="product-card-desc">Trailing Peperomia</span>
+                            <span class="product-card-price">$8.99</span> <span class="product-card-sale">$11.99</span>
+                            <button class="button expanded add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- 3 Row End-->
+                <!-- 4 Row -->
+                <div class="cell gallery-box medium-3 left">
+                    <h3 class="">Seedlings</h3>
+                </div>
+                <div id="horizontalScroll" class="cell medium-7 row auto">
+                    <div class="large-12 columns">
+                        <!-- 1 Card -->
+                        <div class="card-item product-card">
+                            <div class="product-card-thumbnail">
+                                <img src="images/products/seedlings/0.png" alt="Salsa Mix">
+                            </div>
+                            <h4 class="product-card-title">Capsicum Salsa Mix</h4>
+                            <span class="product-card-desc">Garden Fresh</span>
+                            <span class="product-card-price">$14.99</span>
+                            <button class="button expanded add-to-cart">Add to Cart</button>
+                        </div>
+                        <!-- 2 Card -->
+                        <div class="card-item product-card">
+                            <div class="product-card-thumbnail">
+                                <img src="images/products/seedlings/1.png" alt="Bean">
+                            </div>
+                            <h4 class="product-card-title">Bean</h4>
+                            <span class="product-card-desc">Dwarf Tray</span>
+                            <span class="product-card-price">$6.99</span>
+                            <button class="button expanded add-to-cart">Add to Cart</button>
+                        </div>
+                        <!-- 3 Card -->
+                        <div class="card-item product-card">
+                            <div class="product-card-thumbnail">
+                                <img src="images/products/seedlings/2.png" alt="Cauliflower">
+                            </div>
+                            <h4 class="product-card-title">Cauliflower</h4>
+                            <span class="product-card-desc">All Year Tray</span>
+                            <span class="product-card-price">$12.99</span>
+                            <button class="button expanded add-to-cart">Add to Cart</button>
+                        </div>
+                        <!-- 4 Card -->
+                        <div class="card-item product-card">
+                            <div class="product-card-thumbnail">
+                                <img src="images/products/seedlings/3.png" alt="Carrot">
+                            </div>
+                            <h4 class="product-card-title">Carrot</h4>
+                            <span class="product-card-desc">Paris Market Diggers</span>
+                            <span class="product-card-price">$4.99</span>
+                            <button class="button expanded add-to-cart">Add to Cart</button>
+                        </div>
+                        <!-- 5 Card -->
+                        <div class="card-item product-card">
+                            <div class="product-card-thumbnail">
+                                <img src="images/products/seedlings/4.png" alt="Chilli">
+                            </div>
+                            <h4 class="product-card-title">Chilli</h4>
+                            <span class="product-card-desc">Hot Pepper/span</span>
+                            <span class="product-card-price">$6.99</span>
+                            <button class="button expanded add-to-cart">Add to Cart</button>
+                        </div>
+                        <!-- 6 Card -->
+                        <div class="card-item product-card">
+                            <div class="product-card-thumbnail">
+                                <img src="images/products/seedlings/5.png" alt="Artichoke">
+                            </div>
+                            <h4 class="product-card-title">Artichoke</h4>
+                            <span class="product-card-desc">Imperial Star Diggers</span>
+                            <span class="product-card-price">$19.99</span>
+                            <button class="button expanded add-to-cart">Add to Cart</button>
+                        </div>
+                        <!-- 7 Card -->
+                        <div class="card-item product-card">
+                            <div class="product-card-thumbnail">
+                                <img src="images/products/seedlings/6.png" alt="Beetroot">
+                            </div>
+                            <h4 class="product-card-title">Beetroot</h4>
+                            <span class="product-card-desc">Garden Fresh</span>
+                            <span class="product-card-price">$16.99</span>
+                            <button class="button expanded add-to-cart">Add to Cart</button>
+                        </div>
+                        <!-- 8 Card -->
+                        <div class="card-item product-card">
+                            <div class="product-card-thumbnail">
+                                <img src="images/products/seedlings/7.png" alt="Broccoli">
+                            </div>
+                            <h4 class="product-card-title">Broccoli</h4>
+                            <span class="product-card-desc">Garden Fresh</span>
+                            <span class="product-card-price">$19.99</span>
+                            <button class="button expanded add-to-cart">Add to Cart</button>
+                        </div>
+                        <!-- 9 Card -->
+                        <div class="card-item product-card">
+                            <div class="product-card-thumbnail">
+                                <img src="images/products/seedlings/8.png" alt="Cabbage">
+                            </div>
+                            <h4 class="product-card-title">Cabbage</h4>
+                            <span class="product-card-desc">Mini Cabbage</span>
+                            <span class="product-card-price">$17.99</span>
+                            <button class="button expanded add-to-cart">Add to Cart</button>
+                        </div>
+                        <!-- 10 Card -->
+                        <div class="card-item product-card">
+                            <div class="product-card-thumbnail">
+                                <img src="images/products/seedlings/9.png" alt="Cabbage Red">
+                            </div>
+                            <h4 class="product-card-title">Cabbage Red</h4>
+                            <span class="product-card-desc">Garden Fresh</span>
+                            <span class="product-card-price">$17.99</span>
+                            <button class="button expanded add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- 4 Row End -->
+                <!-- 5 Row -->
+                <div class="cell gallery-box medium-3 left">
+                    <h3 class="">Plants</h3>
+                </div>
+                <div id="horizontalScroll" class="cell medium-7 row auto">
+                    <div class="large-12 columns">
+                        <!-- 1 Card -->
+                        <div class="card-item product-card">
+                            <div class="product-card-thumbnail">
+                                <img src="images/products/plants/0.png" alt="Ageratum Pink">
+                            </div>
+                            <h4 class="product-card-title">Ageratum Pink</h4>
+                            <span class="product-card-desc">Floss Flower</span>
+                            <span class="product-card-price">$39.99</span>
+                            <button class="button expanded add-to-cart">Add to Cart</button>
+                        </div>
+                        <!-- 2 Card -->
+                        <div class="card-item product-card">
+                            <div class="product-card-thumbnail">
+                                <img src="images/products/plants/1.png" alt="Agonis flexuosa">
+                            </div>
+                            <h4 class="product-card-title">Agonis flexuosa</h4>
+                            <span class="product-card-desc">WA Weeping Peppermint</span>
+                            <span class="product-card-price">$23.99</span>
+                            <button class="button expanded add-to-cart">Add to Cart</button>
+                        </div>
+                        <!-- 3 Card -->
+                        <div class="card-item product-card">
+                            <div class="product-card-thumbnail">
+                                <img src="images/products/plants/2.png" alt="Alcantarea Rubra">
+                            </div>
+                            <h4 class="product-card-title">Alcantarea Rubra</h4>
+                            <span class="product-card-desc">Giant Bromeliad</span>
+                            <span class="product-card-price">$49.99</span>
+                            <button class="button expanded add-to-cart">Add to Cart</button>
+                        </div>
+                        <!-- 4 Card -->
+                        <div class="card-item product-card">
+                            <div class="product-card-thumbnail">
+                                <img src="images/products/plants/3.png" alt="Aloe Echidna">
+                            </div>
+                            <h4 class="product-card-title">Aloe Echidna</h4>
+                            <span class="product-card-desc">Aloe Echidna</span>
+                            <span class="product-card-price">$25.99</span>
+                            <button class="button expanded add-to-cart">Add to Cart</button>
+                        </div>
+                        <!-- 5 Card -->
+                        <div class="card-item product-card">
+                            <div class="product-card-thumbnail">
+                                <img src="images/products/plants/4.png" alt="Aloe Yellow">
+                            </div>
+                            <h4 class="product-card-title">Aloe Yellow</h4>
+                            <span class="product-card-desc">Bush Baby</span>
+                            <span class="product-card-price">$35.99</span>
+                            <button class="button expanded add-to-cart">Add to Cart</button>
+                        </div>
+                        <!-- 6 Card -->
+                        <div class="card-item product-card">
+                            <div class="product-card-thumbnail">
+                                <img src="images/products/plants/5.png" alt="Aloe Red">
+                            </div>
+                            <h4 class="product-card-title">Aloe Red</h4>
+                            <span class="product-card-desc">Erik the Red</span>
+                            <span class="product-card-price">$39.99</span>
+                            <button class="button expanded add-to-cart">Add to Cart</button>
+                        </div>
+                        <!-- 7 Card -->
+                        <div class="card-item product-card">
+                            <div class="product-card-thumbnail">
+                                <img src="images/products/plants/6.png" alt="Aloe Super Red">
+                            </div>
+                            <h4 class="product-card-title">Aloe Super Red</h4>
+                            <span class="product-card-desc">Aloe</span>
+                            <span class="product-card-price">$42.99</span>
+                            <button class="button expanded add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- 5 Row End -->
+                <!-- 6 Row -->
+                <div class="cell gallery-box medium-3 left">
+                    <h3 class="">Gift</h3>
+                </div>
+                <div id="horizontalScroll" class="cell medium-7 row auto">
+                    <div class="large-12 columns">
+                        <!-- 1 Card -->
+                        <div class="card-item product-card">
+                            <div class="product-card-thumbnail">
+                                <img src="images/products/gift/50.png" alt="Gift Card">
+                            </div>
+                            <h4 class="product-card-title">$50 Gift Card</h4>
+                            <span class="product-card-desc"><br></span>
+                            <span class="product-card-price">$50.00</span>
+                            <button class="button expanded add-to-cart">Add to Cart</button>
+                        </div>
+                        <!-- 2 Card -->
+                        <div class="card-item product-card">
+                            <div class="product-card-thumbnail">
+                                <img src="images/products/gift/100.png" alt="Gift Card">
+                            </div>
+                            <h4 class="product-card-title">$100 Gift Card</h4>
+                            <span class="product-card-desc"><br></span>
+                            <span class="product-card-price">$100.00</span>
+                            <button class="button expanded add-to-cart">Add to Cart</button>
+                        </div>
+                        <!-- 3 Card -->
+                        <div class="card-item product-card">
+                            <div class="product-card-thumbnail">
+                                <img src="images/products/gift/150.png" alt="Gift Card">
+                            </div>
+                            <h4 class="product-card-title">$150 Gift Card</h4>
+                            <span class="product-card-desc"><br></span>
+                            <span class="product-card-price">$150.00</span>
+                            <button class="button expanded add-to-cart">Add to Cart</button>
+                        </div>
+                        <!-- 4 Card -->
+                        <div class="card-item product-card">
+                            <div class="product-card-thumbnail">
+                                <img src="images/products/gift/200.png" alt="Gift Card">
+                            </div>
+                            <h4 class="product-card-title">$200 Gift Card</h4>
+                            <span class="product-card-desc"><br></span>
+                            <span class="product-card-price">$200.00</span>
+                            <button class="button expanded add-to-cart">Add to Cart</button>
+                        </div>
+                        <!-- 5 Card -->
+                        <div class="card-item product-card">
+                            <div class="product-card-thumbnail">
+                                <img src="images/products/gift/250.png" alt="Gift Card">
+                            </div>
+                            <h4 class="product-card-title">$250 Gift Card</h4>
+                            <span class="product-card-desc"><br></span>
+                            <span class="product-card-price">$250.00</span>
+                            <button class="button expanded add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- 6 Row End -->
+                <!-- 7 Row -->
+                <div class="cell gallery-box medium-3 left">
+                    <h3 class="">Tools</h3>
+                </div>
+                <div id="horizontalScroll" class="cell medium-7 row auto">
+                    <div class="large-12 columns">
+                        <!-- 1 Card -->
+                        <div class="card-item product-card">
+                            <div class="product-card-thumbnail">
+                                <img src="images/products/tools/0.png" alt="Hook & Pick Set">
+                            </div>
+                            <h4 class="product-card-title">Hook & Pick Set</h4>
+                            <span class="product-card-desc">4 Peace Black Set</span>
+                            <span class="product-card-price">$15.95</span>
+                            <button class="button expanded add-to-cart">Add to Cart</button>
+                        </div>
+                        <!-- 2 Card -->
+                        <div class="card-item product-card">
+                            <div class="product-card-thumbnail">
+                                <img src="images/products/tools/1.png" alt="Shovel">
+                            </div>
+                            <h4 class="product-card-title">Shovel</h4>
+                            <span class="product-card-desc">Square Mouth Long Handle</span>
+                            <span class="product-card-price">$28.95</span>
+                            <button class="button expanded add-to-cart">Add to Cart</button>
+                        </div>
+                        <!-- 3 Card -->
+                        <div class="card-item product-card">
+                            <div class="product-card-thumbnail">
+                                <img src="images/products/tools/2.png" alt="Fencing Bar">
+                            </div>
+                            <h4 class="product-card-title">Fencing Bar</h4>
+                            <span class="product-card-desc">Cyclone 1650cm Long</span>
+                            <span class="product-card-price">$63.00</span>
+                            <button class="button expanded add-to-cart">Add to Cart</button>
+                        </div>
+                        <!-- 4 Card -->
+                        <div class="card-item product-card">
+                            <div class="product-card-thumbnail">
+                                <img src="images/products/tools/3.png" alt="Secateurs">
+                            </div>
+                            <h4 class="product-card-title">Secateurs</h4>
+                            <span class="product-card-desc">Narrow Cutting Head</span>
+                            <span class="product-card-price">$26.95</span>
+                            <button class="button expanded add-to-cart">Add to Cart</button>
+                        </div>
+                        <!-- 5 Card -->
+                        <div class="card-item product-card">
+                            <div class="product-card-thumbnail">
+                                <img src="images/products/tools/4.png" alt="Post Hole Pincer">
+                            </div>
+                            <h4 class="product-card-title">Post Hole Pincer</h4>
+                            <span class="product-card-desc">Cyclone 200mm Long</span>
+                            <span class="product-card-price">$78.00</span>
+                            <button class="button expanded add-to-cart">Add to Cart</button>
+                        </div>
+                        <!-- 6 Card -->
+                        <div class="card-item product-card">
+                            <div class="product-card-thumbnail">
+                                <img src="images/products/tools/5.png" alt="Mattock">
+                            </div>
+                            <h4 class="product-card-title">Mattock</h4>
+                            <span class="product-card-desc">Hardwood Handle</span>
+                            <span class="product-card-price">$43.95</span>
+                            <button class="button expanded add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- 7 Row End -->
+                <!-- 8 Row -->
+                <div class="cell gallery-box medium-3 left">
+                    <h3 class="">Pots</h3>
+                </div>
+                <div id="horizontalScroll" class="cell medium-7 row auto">
+                    <div class="large-12 columns">
+                        <!-- 1 Card -->
+                        <div class="card-item product-card">
+                            <div class="product-card-thumbnail">
+                                <img src="images/products/pots/0.png" alt="White Gloss">
+                            </div>
+                            <h4 class="product-card-title">White Gloss</h4>
+                            <span class="product-card-desc">Amanda Round pot</span>
+                            <span class="product-card-price">$19.99</span>
+                            <button class="button expanded add-to-cart">Add to Cart</button>
+                        </div>
+                        <!-- 2 Card -->
+                        <div class="card-item product-card">
+                            <div class="product-card-thumbnail">
+                                <img src="images/products/pots/1.png" alt="Ball Planter">
+                            </div>
+                            <h4 class="product-card-title">Ball Planter</h4>
+                            <span class="product-card-desc">Sand Blast Giants</span>
+                            <span class="product-card-price">$29.99</span>
+                            <button class="button expanded add-to-cart">Add to Cart</button>
+                        </div>
+                        <!-- 3 Card -->
+                        <div class="card-item product-card">
+                            <div class="product-card-thumbnail">
+                                <img src="images/products/pots/2.png" alt="Ball Planter White">
+                            </div>
+                            <h4 class="product-card-title">Ball Planter White</h4>
+                            <span class="product-card-desc">Lightweight</span>
+                            <span class="product-card-price">$25.99</span>
+                            <button class="button expanded add-to-cart">Add to Cart</button>
+                        </div>
+                        <!-- 4 Card -->
+                        <div class="card-item product-card">
+                            <div class="product-card-thumbnail">
+                                <img src="images/products/pots/3.png" alt="Basket with Handles">
+                            </div>
+                            <h4 class="product-card-title">Basket with Handles</h4>
+                            <span class="product-card-desc">Natural</span>
+                            <span class="product-card-price">$39.99</span>
+                            <button class="button expanded add-to-cart">Add to Cart</button>
+                        </div>
+                        <!-- 5 Card -->
+                        <div class="card-item product-card">
+                            <div class="product-card-thumbnail">
+                                <img src="images/products/pots/4.png" alt="Bird Bath">
+                            </div>
+                            <h4 class="product-card-title">Bird Bath</h4>
+                            <span class="product-card-desc">Traditional Terracotta</span>
+                            <span class="product-card-price">$19.99</span>
+                            <button class="button expanded add-to-cart">Add to Cart</button>
+                        </div>
+                        <!-- 6 Card -->
+                        <div class="card-item product-card">
+                            <div class="product-card-thumbnail">
+                                <img src="images/products/pots/5.png" alt="Bird Bath Small">
+                            </div>
+                            <h4 class="product-card-title">Bird Bath Small</h4>
+                            <span class="product-card-desc">Traditional Terracotta</span>
+                            <span class="product-card-price">$15.99</span>
+                            <button class="button expanded add-to-cart">Add to Cart</button>
+                        </div>
+                        <!-- 7 Card -->
+                        <div class="card-item product-card">
+                            <div class="product-card-thumbnail">
+                                <img src="images/products/pots/6.png" alt="Cat Pot">
+                            </div>
+                            <h4 class="product-card-title">Cat Pot</h4>
+                            <span class="product-card-desc">Traditional Terracotta</span>
+                            <span class="product-card-price">$19.99</span>
+                            <button class="button expanded add-to-cart">Add to Cart</button>
+                        </div>
+                        <!-- 8 Card -->
+                        <div class="card-item product-card">
+                            <div class="product-card-thumbnail">
+                                <img src="images/products/pots/7.png" alt="Concrete Bowl">
+                            </div>
+                            <h4 class="product-card-title">Concrete Bowl</h4>
+                            <span class="product-card-desc">Natural Wood Feet</span>
+                            <span class="product-card-price">$19.99</span>
+                            <button class="button expanded add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- 8 Row End -->
+
+                <!-- Footer -->
+                <div class="grid-container fluid main-section">
+                    <div class="large-12 medium-8 small-12 cell">
+                        <div class="grid-x grid-padding-x">
+                            <div class="large-3 medium-3 columns cell title">
+                                <h4>George's Garden</h4>
+                                <img src="/images/cstmgardenlogo.png">
+                                <div class="grid-x align-justify">
+                                    <a href="#"><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></a>
+                                    <a href="#"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
+                                    <a href="#"><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></a>
+                                    <a href="#"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a>
+                                </div>
+                            </div>
+
+                            <!-- Middle Section -->
+                            <div class="large-4 medium-4 columns cell title contact-sec align-center">
+                                <h4>Reach Us Out</h4>
+                                <br>
+                                <div class="grid-x grid-margin-x">
+                                    <div class="cell shrink">
+                                        <i class="fas fa-envelope fa-2x"></i>
+                                    </div>
+                                    <div class="cell auto">
+                                        <a href="mailto:erollooper@gmail.com">george@gardencenter.com</a>
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="grid-x grid-margin-x">
+                                    <div class="cell shrink">
+                                        <i class="fas fa-phone-alt fa-2x"></i>
+                                    </div>
+                                    <div class="cell auto">
+                                        <a href="">+61412345678</a>
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="grid-x grid-margin-x">
+                                    <div class="cell shrink">
+                                        <i class="fas fa-map-marker-alt fa-2x"></i>
+                                    </div>
+                                    <div class="cell auto">
+                                        <a href="">35 Abbedeen St, Perth<br>Australia 6000</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Right Section -->
+                            <div class="large-4 medium-4 columns cell title">
+                                <h4>Subscribe to Our News</h4>
+                                <input type="text" placeholder="Email Address">
+                                <a class="button expanded" href="#">Subscribe Now</a>
+                                <!-- Up Top -->
+                                <div class="large-12 medium-12">
+                                    <div class="grid-x grid-padding-x">
+                                        <div class="large-12 medium-12 columns search cell">
+                                            <a href="#"><i class="fa fa-arrow-circle-o-up" aria-hidden="true"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Right Section -->
+                        </div>
+                    </div>
+                    <!-- Copyright Section -->
+                    <div class="large-12 medium-12 cell columns">
+                        <div class="grid-x grid-padding-x">
+                            <div class="large-12 medium-12 columns cell footer">
+                                <h6 class="text-center"> Copyright &copy; 2021 George's Garden Center </h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Footer End -->
+            </div>
+        </div>
+        <script src="node_modules/jquery/dist/jquery.js"></script>
+        <script src="node_modules/what-input/dist/what-input.js"></script>
+        <script src="node_modules/foundation-sites/dist/js/foundation.js"></script>
+        <script src="js/app.js"></script>
     </body>
 
 </html>

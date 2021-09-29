@@ -4,6 +4,7 @@
 @import 'settings';
 @import 'foundation';
 @import 'motion-ui';
+@import 'checkout';
 
 // Global styles
 @include foundation-global-styles;
@@ -64,76 +65,9 @@
 @include motion-ui-transitions;
 @include motion-ui-animations;
 
-// Product Section
-.ecommerce-product-slider {
-  .orbit-previous,
-  .orbit-next {
-    color: $medium-gray;
-  }
+//Check Out Section
 
-  .orbit-bullets button {
-    height: 0.65rem;
-    width: 0.65rem;
-  }
-
-  .product-card {
-    background-color: $white;
-    border: 1px solid $light-gray;
-    padding: 1rem;
-    margin-bottom: 1.5rem;  
-  }
-
-  .product-card-thumbnail {
-    display: block;
-    position: relative;
-  }
-
-  .product-card-title {
-    font-family: 'Open sans', sans-serif;
-    font-size: 0.9rem;
-    font-weight: 600;
-    line-height: 1.45rem;
-    margin-top: 1rem;
-    margin-bottom: 0;
-  }
-
-  .product-card-desc {
-    color: $dark-gray;
-    display: block;
-    font-family: 'Open sans', sans-serif;
-    font-size: 0.85rem;
-  }
-
-  .product-card-price {
-    color: darken($dark-gray,30%);
-    display: inline-block;
-    font-size: 0.85rem;
-    font-weight: 600;
-    margin-top: 0.8rem;
-  }
-
-  .product-card-sale {
-    color: $medium-gray;
-    display: inline-block;
-    font-size: 0.85rem;
-    margin-left: 0.3rem;
-    text-decoration: line-through;
-  }
-
-  .product-card-colors {
-    display: block;
-    margin-top: 0.8rem;
-  }
-
-  .product-card-color-option {
-    display: inline-block;
-    height: 25px;
-    width: 25px;
-  }
-}
-
-
-// End of Product Sec
+//Check Out Section End
 
 //Gallery Section
 div.scrollable {
@@ -146,11 +80,76 @@ div.scrollable {
 }
 
 .gallery-box{
-  height: 140px;
-  width: 140px;
+  height: 14em;
   margin: 1em 0.5em 0 0;
   background-color: $light-gray;
   text-align: center;
+}
+
+#horizontalScroll {
+  white-space:nowrap;
+  overflow-x:scroll;
+}
+
+.card-item {
+  display:inline-block;
+  width:10em;
+  height:10em;
+  text-align:center;
+  border: 2px solid $light-gray;
+  margin-right: 2em;
+}
+
+.product-card {
+  padding: 0.3rem;
+  margin-bottom: 5rem;  
+}
+
+.product-card-thumbnail {
+  display: block;
+  position: relative;
+}
+
+.product-card-title {
+  font-family: 'Open sans', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+  line-height: 2.4em;
+  margin-bottom: 0;
+}
+
+.product-card-desc {
+  color: $dark-gray;
+  display: block;
+  font-family: 'Open sans', sans-serif;
+  font-size: 0.85rem;
+}
+
+.product-card-price {
+  color: darken($dark-gray,30%);
+  display: inline-block;
+  font-size: 0.85rem;
+  font-weight: 600;
+  // margin-top: 0.8rem;
+}
+
+.product-card-sale {
+  color: $medium-gray;
+  display: inline-block;
+  font-size: 0.85rem;
+  text-decoration: line-through;
+}
+
+.product-card-colors {
+  display: block;
+}
+
+.product-card-color-option {
+  display: inline-block;
+}
+
+.product-quantity input[type=number]{
+  width: 3.3em;
 }
 //Gallery Section End
 
@@ -184,7 +183,6 @@ div.scrollable {
   padding: 1rem;
   margin-top: .3rem;
 }
-
 // All Images
 
 #left-image {
@@ -259,6 +257,11 @@ margin-top: 50px;
 .mt-5{
   margin-top: 5px;
 }
+
+.mt-20{
+  margin-top: 20px;
+}
+
 //Contact Page body Area End
   h1 {
     font-family: 'Prata', serif;
@@ -288,38 +291,32 @@ margin-top: 50px;
   width: 15em;
 }
 
-footer{
-  z-index: -2;
-}
-
-.blue {
-  border: 2px red solid;
-  background-color: blue;
-}
-
-.red {
-  border: 2px blue solid;
-  background-color: red;
-}
-
 .title-bar{
 background-color: $light-gray;
 border-radius: 5px 5px 0 0;
 }
 
+
+.top-bar{
+  border-radius: 5px 0 0 5px;
+}
+
+
 .btn{
   background-color: #58874d;
-  opacity: 40%;
+  opacity: 50%;
   color: $white;
   &:hover{
     background-color: $success-color;
     color: $white;
-    opacity: 110%;
+    opacity: 100%;
   }
 }
+
 .left{
   border-radius: 30px 0 0 5px;
 }
+
 .right{
   border-radius: 0 5px 30px 0;
   background-color: $success-color;
@@ -374,7 +371,11 @@ border-radius: 5px 5px 0 0;
     }
   }
   .expanded{
+    background-color: $success-color;
     @include cstmRadius();
+  }
+  .added{
+    background-color: $primary-color;
   }
   
   .footer{
@@ -402,5 +403,3 @@ border-radius: 5px 5px 0 0;
 .contact-sec{
   color: $white;
 }
-
-

@@ -1,9 +1,5 @@
 $(document).foundation();
 
-// let cartCounterDisplay = document.querySelector('#cart-counter');
-
-// cartCounterDisplay.innerHTML = `&nbsp;${cartCounter} - $ ${cartPrice}`;
-
 $(function() {
   $('.searchbar')
     .bind('click', function(event) {
@@ -11,8 +7,6 @@ $(function() {
       $('.searchbar').toggleClass("active");
     })
 });
-
-//Check Out Section
 
 /* Variables */
 var taxRate = 0.10;
@@ -142,9 +136,6 @@ function removeItem(removeButton)
     document.getElementById('cart-counter').children[0].innerText = itemNo;
     recalculateCart();
   });
-  
-  var addedBtn = $('.added').parent()[1].children[1].innerText;
   var className = productRow[0].innerText.split('\n')[0].replaceAll('$','').replaceAll('&','').replaceAll(' ', '-');
-  // var findAddedItem = $(".product-card-title").text();
   $(`.${className}`).text("Add to Cart").removeClass(`${className} added`);
 } 

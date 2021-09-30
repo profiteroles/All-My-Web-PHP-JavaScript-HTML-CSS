@@ -28,10 +28,12 @@ Route::get('register', [RegisterController::class, 'create'])->middleware('guest
 Route::post('register', [RegisterController::class,'store'])->middleware('guest');
 
 Route::get('login', [SessionController::class,'create'])->middleware('guest');
-Route::post('login', [SessionController::class,'store'])->middleware('auth');
+Route::post('login', [SessionController::class,'store'])->middleware('guest');
 Route::post('logout', [SessionController::class,'destroy'])->middleware('auth');
 Route::post('newsletter', NewsletterController::class);
 
+
+Route::get('admin/posts/create',[PostController::class, 'create'])->middleware('admin');
 
 //no longer need this as Controller and the Category Dropdown component does the job
 //Route::get('categories/{category:slug}', fn(Category $category)=>view('posts',[

@@ -21,7 +21,7 @@ class AppServiceProvider extends ServiceProvider
                 'apiKey' => config('services.mailchimp.key'),
                 'server' => 'us6'
             ]);
-            return new MailchimpNewsletter($client);
+            return new Newsletter($client);
         });
     }
 

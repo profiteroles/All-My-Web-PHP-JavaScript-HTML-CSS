@@ -1,0 +1,15 @@
+<%- include partials/header.ejs -%>
+    <h1>Home</h1>
+    <p>
+        <%= homePost %>
+    </p>
+    <% posts.forEach(function(post){ %>
+        <h2>
+            <%= post['title'] %>
+        </h2>
+        <p>
+            <%= post['excerpt'] %><a href="/posts/<%= post['slug'] %>"> Read More</a>
+        </p>
+
+        <% }); %>
+            <%- include partials/footer.ejs -%>

@@ -1,9 +1,30 @@
 <%- include partials/header.ejs -%>
-    <h1>
-        <%=post['title'] %>
-    </h1>
-    <p>
-        <%=post['body'] %>
-    </p>
+    <div class="container">
+        <div class="well">
+            <div class="media">
+                <div class="media-body">
+                    <div class="media-heading">
+                        <h1>
+                            <%=post['title'] %>
+                        </h1>
+                        <p class="">By Franciscoa</p>
+
+                    </div>
+                    <p>
+                        <%=post['body'] %>
+                    </p>
+
+                    <ul class="list-inline list-unstyled">
+                        <li><span><i class="glyphicon glyphicon-calendar"></i>
+                                <time datetime="YYYY-MM-DDThh:mm">
+                                    <%=post['created_at'].toDateString() %>
+                                </time>
+                            </span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <%- include partials/footer.ejs -%>

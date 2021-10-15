@@ -1,15 +1,50 @@
 <%- include partials/header.ejs -%>
-    <h1>Home</h1>
-    <p>
-        <%= homePost %>
-    </p>
     <% posts.forEach(function(post){ %>
-        <h2>
-            <%= post['title'] %>
-        </h2>
-        <p>
-            <%= post['excerpt'] %><a href="/posts/<%= post['slug'] %>"> Read More</a>
-        </p>
+        <div class="container">
+            <div class="well">
+                <ul class="list-inline">
+                    <li>
+                        <h2>
+                            <%= post['title'] %>
+                        </h2>
+                    </li>
+                    <li>
+                        <p>
+                            <%= post['excerpt'] %><a href="/posts/<%= post['slug'] %>"> Read More</a>
+                        </p>
+                    </li>
+                </ul>
+                <ul class="list-inline list-unstyled">
+                    <li> by <strong>
+                            <%= post['author'] %>
+                        </strong>
+                    </li>
+                    <li>|</li>
+                    <li><span><i class="glyphicon glyphicon-calendar"></i>
+                            <time datetime="YYYY-MM-DDThh:mm">
+                                <%=post['created_at'].toDateString() %>
+                            </time>
+                        </span></li>
+                    <li>|</li>
+                    <span><i class="glyphicon glyphicon-comment"></i> 2 comments</span>
+                    <li>|</li>
+                    <li>
+                        <span class="glyphicon glyphicon-star"></span>
+                        <span class="glyphicon glyphicon-star"></span>
+                        <span class="glyphicon glyphicon-star"></span>
+                        <span class="glyphicon glyphicon-star"></span>
+                        <span class="glyphicon glyphicon-star-empty"></span>
+                    </li>
+                    <li>|</li>
+                    <li>
+                        <span><i class="fa fa-facebook-square"></i></span>
+                        <span><i class="fa fa-twitter-square"></i></span>
+                        <span><i class="fa fa-google-plus-square"></i></span>
+                    </li>
+                </ul>
 
-        <% }); %>
-            <%- include partials/footer.ejs -%>
+                <% }); %>
+            </div>
+        </div>
+
+        <%- include partials/footer.ejs -%>

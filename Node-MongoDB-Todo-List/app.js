@@ -3,6 +3,7 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
+const _ = require("lodash");
 
 const app = express();
 
@@ -79,14 +80,29 @@ app.post("/", function (req, res) {
 });
 
 app.post("/delete", function (req, res) {
-
-  Item.findByIdAndRemove(req.body.completedItem, function (err) {
-    res.redirect("/");
-  });
+  const listName = req.body.listName;
+  if (listName == "Today") {
+    Item.findByIdAndRemove(req.body.completedItem, function (err) {
+      res.redirect("/");
+    });
+  } else {
+    List.findOneAndUpdate(
+      { name: listName },
+      {
+        $pull: {
+          items: {
+            _id: req.body.completedItem
+          }
+        }
+      }
+      , function (err, foundList) {
+        res.redirect("/" + listName);
+      });
+  }
 });
 
 app.get('/:customListRoute', function (req, res) {
-  const routeName = req.params.customListRoute;
+  const routeName = _.capitalize(req.params.customListRoute);
 
 
   List.findOne({ name: routeName }, function (err, docs) {

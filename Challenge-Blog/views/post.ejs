@@ -1,25 +1,28 @@
 <%- include partials/header.ejs -%>
+
     <div class="container">
         <div class="well">
             <div class="media">
                 <div class="media-body">
                     <div class="media-heading">
                         <h1>
-                            <%=post['title'] %>
+                            <%= post.title %>
                         </h1>
-                        <p class="">By Franciscoa</p>
-
+                        <p class="">By <strong>
+                                <%= post.author %>
+                            </strong></p>
                     </div>
                     <p>
-                        <%=post['body'] %>
+                        <%= post.body %>
                     </p>
-
                     <ul class="list-inline list-unstyled">
-                        <li><span><i class="glyphicon glyphicon-calendar"></i>
+                        <li>
+                            <span><i class="glyphicon glyphicon-calendar"></i>
                                 <time datetime="YYYY-MM-DDThh:mm">
-                                    <%=post['created_at'].toDateString() %>
+                                    <%=post.created_at.toDateString() %>
                                 </time>
-                            </span></li>
+                            </span>
+                        </li>
                     </ul>
                 </div>
             </div>

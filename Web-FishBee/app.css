@@ -1,13 +1,25 @@
 body {
-    background-image: url('background.png');
+    background-image: url('background80.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100% 100%;
 }
 
 #map {
-    height: 400px;
     /* The height is 400 pixels */
-    width: 40%;
+    height: 400px;
     /* The width is the width of the web page */
+    width: 40%;
   }
+
+  .active{
+    text-transform: uppercase;
+  }
+
+  .smooth {
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+::selection {
+    background-color: aliceblue
+}

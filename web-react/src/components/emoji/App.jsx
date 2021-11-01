@@ -2,15 +2,6 @@ import React from "react";
 import Tile from "./Tile";
 import emPedia from "./emoji";
 
-function emojiTile(emoji) {
-    return <Tile
-        key={emoji.id}
-        emoji={emoji.emoji}
-        name={emoji.name}
-        desc={emoji.meaning}
-    />
-}
-
 
 function App() {
     return (
@@ -18,9 +9,15 @@ function App() {
             <h1>
                 <span>emojipedia</span>
             </h1>
-
             <dl className="dictionary">
-                {emPedia.map(emojiTile)}
+                {emPedia.map(emoji => (
+                    <Tile
+                        key={emoji.id}
+                        emoji={emoji.emoji}
+                        name={emoji.name}
+                        desc={emoji.meaning}
+                    />
+                ))}
             </dl>
         </div>
     );

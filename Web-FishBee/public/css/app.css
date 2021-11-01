@@ -1,0 +1,49 @@
+body {
+    background-image: url('../../images/background80.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+#map {
+    /* The height is 400 pixels */
+    height: 400px;
+    /* The width is the width of the web page */
+    width: 40%;
+  }
+
+  .active{
+    text-transform: uppercase;
+    text-decoration-line: underline;
+  }
+  .active:hover{
+    color: white;
+  }
+
+  .smooth {
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+::selection {
+    background-color: aliceblue
+}
+
+.search {
+  position:relative;
+  margin-top: 20px;
+}
+.search i{
+  position: absolute;
+  top:0px;
+  font-size: 3rem;
+  color: greenyellow;
+  right:10px;
+  transform: rotate(0deg);
+  transition:0.5s;
+}
+
+.search i:hover{
+  color:white;
+  font-size:3.5rem;
+  transform: rotate(360deg);
+}

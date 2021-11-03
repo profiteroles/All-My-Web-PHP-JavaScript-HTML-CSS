@@ -9,6 +9,7 @@
 		<meta name="author" content="EROL A'NIL">
 		<meta name="description" content="FishBEE Craft Official Web Page">
 		<meta name="keywords" content="Bee-Houses, FishBEE, FishBEE-Craft">
+		<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 		<link href="https://unpkg.com/tailwindcss/dist/tailwind.min.css" rel="stylesheet">
 		<script src="https://kit.fontawesome.com/6dfbd7ac06.js" crossorigin="anonymous"></script>
 		<link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css" rel="stylesheet">
@@ -21,7 +22,7 @@
 		<div class="w-full m-0 p-0 bg-cover bg-bottom" style="height: 60vh; max-height:460px;">
 			<!--Logo-->
 			<img id="logo" class="p-10" style="max-height:200px;" src="../images/logo.png" alt="FishBEE Logo">
-			<h1 class="text-center text-4xl font-bold text-gray-700">Resources</h1>
+			<h1 class="text-center text-4xl font-bold text-gray-700">Next Level of Air Bee & Bee</h1>
 		</div>
 
 		<!--Container-->
@@ -34,7 +35,7 @@
 						<div class="flex w-1/2 pl-4 text-sm">
 							<ul class="list-reset flex justify-between flex-1 md:flex-none items-center">
 								<li class="mr-2">
-									<a class="inline-block py-2 px-2 text-white font-bold active" href="">Home</a>
+									<a class="inline-block py-2 px-2 text-white font-bold active" href="#">Home</a>
 								</li>
 								<li class="mr-2">
 									<a class="inline-block text-white font-bold hover:text-yellow-800 py-2 px-2"
@@ -52,25 +53,18 @@
 						</div>
 
 
-						<div class="flex w-1/2 justify-end content-center">
-							<a class="inline-block text-gray-500 no-underline hover:text-white hover:text-underline text-center h-10 p-2 md:h-auto md:p-4 avatar"
-								data-tippy-content="@fishbee_twit" href="https://twitter.com/intent/tweet?url=#">
-								<svg class="fill-current h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-									<path
-										d="M30.063 7.313c-.813 1.125-1.75 2.125-2.875 2.938v.75c0 1.563-.188 3.125-.688 4.625a15.088 15.088 0 0 1-2.063 4.438c-.875 1.438-2 2.688-3.25 3.813a15.015 15.015 0 0 1-4.625 2.563c-1.813.688-3.75 1-5.75 1-3.25 0-6.188-.875-8.875-2.625.438.063.875.125 1.375.125 2.688 0 5.063-.875 7.188-2.5-1.25 0-2.375-.375-3.375-1.125s-1.688-1.688-2.063-2.875c.438.063.813.125 1.125.125.5 0 1-.063 1.5-.25-1.313-.25-2.438-.938-3.313-1.938a5.673 5.673 0 0 1-1.313-3.688v-.063c.813.438 1.688.688 2.625.688a5.228 5.228 0 0 1-1.875-2c-.5-.875-.688-1.813-.688-2.75 0-1.063.25-2.063.75-2.938 1.438 1.75 3.188 3.188 5.25 4.25s4.313 1.688 6.688 1.813a5.579 5.579 0 0 1 1.5-5.438c1.125-1.125 2.5-1.688 4.125-1.688s3.063.625 4.188 1.813a11.48 11.48 0 0 0 3.688-1.375c-.438 1.375-1.313 2.438-2.563 3.188 1.125-.125 2.188-.438 3.313-.875z">
-									</path>
-								</svg>
-							</a>
-							<a class="inline-block text-gray-500 no-underline hover:text-white hover:text-underline text-center h-10 p-2 md:h-auto md:p-4 avatar"
-								data-tippy-content="#Fishbee-crafts"
-								href="https://www.facebook.com/sharer/sharer.php?u=#">
-								<svg class="fill-current h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-									<path
-										d="M19 6h5V0h-5c-3.86 0-7 3.14-7 7v3H8v6h4v16h6V16h5l1-6h-6V7c0-.542.458-1 1-1z">
-									</path>
-								</svg>
-							</a>
-						</div>
+						<<!-- Social Media Icons -->
+							<div class="flex w-1/2 justify-end content-center">
+								<a class="text-gray-500 hover:text-white md:h-auto md:p-4 avatar"
+									data-tippy-content="@fishbee_craft" href="https://instagram.com/">
+									<i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
+								</a>
+								<a class="text-gray-500 hover:text-white md:h-auto md:p-4 avatar p-3"
+									data-tippy-content="#Fishbee-crafts"
+									href="https://www.facebook.com/sharer/sharer.php?u=#">
+									<i class="fa fa-facebook fa-2x" aria-hidden="true"></i>
+								</a>
+							</div>
 					</div>
 				</nav>
 
@@ -78,37 +72,26 @@
 
 					<!--Lead Card-->
 					<div class="flex h-full bg-transparent overflow-hidden shadow-lg rounded-b-lg">
-						<a href="pages/post.html" class="flex flex-wrap no-underline hover:no-underline">
-							<div class="w-full md:w-2/3">
-								<img src="https://source.unsplash.com/collection/494263/800x600"
-									class="h-full w-full shadow">
-							</div>
+						<div class="w-full md:w-2/3">
+							<img src="https://source.unsplash.com/collection/494263/800x600"
+								class="h-full w-full shadow">
+						</div>
 
-							<div class="w-full md:w-1/3 flex flex-col flex-grow flex-shrink">
-								<div class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow-lg">
-									<p class="w-full text-gray-600 text-xs md:text-sm pt-6 px-6">Air BEE & BEE</p><br>
-									<div class="w-full font-bold text-xl text-gray-900 px-6">What FishBEE is All About
-									</div>
-									<p class="text-gray-800 font-serif text-base px-6 mb-5"><br>
-										Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-										incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-										nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-										Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-										fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-										culpa qui officia deserunt mollit anim id est laborum.
-									</p>
+						<div class="w-full md:w-1/3 flex flex-col flex-grow flex-shrink">
+							<div class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow-lg">
+								<p class="w-full text-gray-600 text-xs md:text-sm pt-6 px-6">Air BEE & BEE</p><br>
+								<div class="w-full font-bold text-xl text-gray-900 px-6">What FishBEE is All About
 								</div>
-
-								<div
-									class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow-lg p-6">
-									<div class="flex items-center justify-between">
-										🐝
-										<p class="text-gray-600 text-xs md:text-sm">1 MIN READ</p>
-									</div>
-								</div>
+								<p class="text-gray-800 font-serif text-base px-6 mb-5"><br>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+									incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+									nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+									Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+									fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+									culpa qui officia deserunt mollit anim id est laborum.
+								</p>
 							</div>
-
-						</a>
+						</div>
 					</div>
 					<!--/Lead Card-->
 
@@ -119,7 +102,7 @@
 						<!--1/3 col -->
 						<div class="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink">
 							<div class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow-lg">
-								<a href="#" class="flex flex-wrap no-underline hover:no-underline">
+								<a href="pages/resourses.html" class="flex flex-wrap no-underline hover:no-underline">
 									<img src="https://source.unsplash.com/collection/225/800x600"
 										class="h-64 w-full rounded-t pb-6">
 									<div class="w-full font-bold text-xl text-gray-900 text-center py-6">Resources
@@ -131,12 +114,13 @@
 									</p>
 								</a>
 							</div>
+
 						</div>
 
 						<!--1/3 col -->
 						<div class="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink">
 							<div class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow-lg">
-								<a href="#" class="flex flex-wrap no-underline hover:no-underline">
+								<a href="/pages/blogs.html" class="flex flex-wrap no-underline hover:no-underline">
 									<img src="https://source.unsplash.com/collection/3106804/800x600"
 										class="h-64 w-full rounded-t pb-6">
 									<div class="w-full font-bold text-xl text-gray-900 text-center py-6">Blog
@@ -154,7 +138,7 @@
 						<!--1/3 col -->
 						<div class="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink">
 							<div class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow-lg">
-								<a href="#" class="flex flex-wrap no-underline hover:no-underline">
+								<a href="/pages/products.html" class="flex flex-wrap no-underline hover:no-underline">
 									<img src="https://source.unsplash.com/collection/539527/800x600"
 										class="h-64 w-full rounded-t pb-6">
 									<div class="w-full  font-bold text-xl text-gray-900 text-center py-6">Products</div>
@@ -167,12 +151,23 @@
 							</div>
 						</div>
 
+						<!-- Banner -->
+						<div
+							class="flex-grow uppercase flex-shrink h-10 w-full m-6 bg-gray-900 opacity-70 rounded-t-lg">
+							<div class="pt-1">
+								<p class="font-bold text-sm md:text-base text-center text-white text-xl md:text-2xl">
+									Our Latest
+									News</p>
+
+							</div>
+						</div>
+
 						<!--1/2 col -->
 						<div class="w-full md:w-1/2 p-6 flex flex-col flex-grow flex-shrink">
-							<div class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow-lg">
-								<a href="#" class="flex flex-wrap no-underline hover:no-underline">
+							<div class="flex-1 bg-white rounded-t-none rounded-b overflow-hidden shadow-lg">
+								<a href="/pages/post.html" class="flex flex-wrap no-underline hover:no-underline">
 									<img src="https://source.unsplash.com/collection/3657445/800x600"
-										class="h-full w-full rounded-t pb-6">
+										class="h-full w-full pb-6">
 									<div class="w-full font-bold text-xl text-gray-900 px-6">Lorem ipsum dolor sit amet.
 									</div>
 									<p class="text-gray-800 font-serif text-base px-6 mb-5">
@@ -183,7 +178,7 @@
 							<div
 								class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow-lg p-6">
 								<div class="flex items-center justify-between">
-									<img class="w-8 h-8 rounded-full mr-4 avatar" data-tippy-content="Author Name"
+									<img class="w-8 h-8 mr-4 rounded-full avatar" data-tippy-content="Author Name"
 										src="http://i.pravatar.cc/300" alt="Avatar of Author">
 									<p class="text-gray-600 text-xs md:text-sm">1 MIN READ</p>
 								</div>
@@ -192,10 +187,10 @@
 
 						<!--1/2 col -->
 						<div class="w-full md:w-1/2 p-6 flex flex-col flex-grow flex-shrink">
-							<div class="flex-1 flex-row bg-white rounded-t rounded-b-none overflow-hidden shadow-lg">
-								<a href="#" class="flex flex-wrap no-underline hover:no-underline">
+							<div class="flex-1 flex-row bg-white rounded-t-none rounded-b overflow-hidden shadow-lg">
+								<a href="/pages/post.html" class="flex flex-wrap no-underline hover:no-underline">
 									<img src="https://source.unsplash.com/collection/764827/800x600"
-										class="h-full w-full rounded-t pb-6">
+										class="h-full w-full pb-6">
 									<div class="w-full font-bold text-xl text-gray-900 px-6">Lorem ipsum dolor sit amet.
 									</div>
 									<p class="text-gray-800 font-serif text-base px-6 mb-5">
@@ -295,23 +290,23 @@
 									class="hover:text-white ml-1">The George Burnett Park
 									Corner of Manning Road and Elderfield Road, Karawara</a>
 							</li>
-						</ul>
-						<!-- Up Top -->
-						<div class="large-12 medium-12">
-							<div class="grid-x grid-padding-x">
-								<div class="large-12 medium-12 columns search cell">
-									<a href="#"><i class="fa fa-arrow-circle-o-up" aria-hidden="true"></i></a>
+							<li>
+								<!-- Up Top -->
+								<div class="large-12 medium-12 pb-5 pl-12">
+									<div class="grid-x grid-padding-x">
+										<div class="large-12 medium-12 columns search cell">
+											<a href="#"><i class="fa fa-arrow-circle-o-up" aria-hidden="true"></i></a>
+										</div>
+									</div>
 								</div>
-							</div>
-						</div>
+							</li>
+						</ul>
 					</div>
 				</div>
 			</div>
 		</footer>
-
 		<script src="https://unpkg.com/popper.js@1/dist/umd/popper.min.js"></script>
 		<script src="https://unpkg.com/tippy.js@4"></script>
-
 		<script src="public/js/app.js"></script>
 	</body>
 

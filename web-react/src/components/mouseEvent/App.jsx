@@ -18,7 +18,7 @@ function App() {
 
     function clickHanler(event) {
         setHeadTitle(name);
-        event.preventDefault()
+        event.preventDefault();
     }
 
     return (
@@ -34,7 +34,6 @@ function App() {
                 <button
                     type="submit"
                     style={{ "backgroundColor": isMouseOver ? "black" : "white" }}
-
                     onMouseOver={mouseHoverHandler}
                     onMouseOut={mouseOutHandler}
                 >Submit</button>
